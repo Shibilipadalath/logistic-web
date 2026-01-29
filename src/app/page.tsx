@@ -8,6 +8,7 @@ import ExportDestinations from "@/components/ExportDestinations";
 import Testimonials from "@/components/Testimonials";
 import Partners from "@/components/Partners";
 import RequestQuote from "@/components/RequestQuote";
+import Footer from "@/components/Footer";
 import Process from "@/components/Process";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Testimonials />
       <Partners />
       <RequestQuote />
+      <Footer />
     </main>
   );
 }
