@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ExportDestinations from "@/components/ExportDestinations";
+import Testimonials from "@/components/Testimonials";
 import Partners from "@/components/Partners";
 import Process from "@/components/Process";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Process />
       <ExportDestinations />
+      <Testimonials />
       <Partners />
     </main>
   );
