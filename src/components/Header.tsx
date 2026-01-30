@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -6,28 +7,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="text-orange-500">
-            {/* Ship/Logistics Icon */}
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              {/* Simplified ship hull */}
-              <path d="M2 16c0-3 2-5 5-5h10c3 0 5 2 5 5v2H2v-2z" />
-              {/* Cabin/Bridge */}
-              <path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
-              {/* Water lines */}
-              <path d="M2 20h20" strokeWidth="2" className="opacity-50" />
-            </svg>
+          <div className="relative w-8 h-8">
+            <Image
+              src="/logo.png"
+              alt="Fizan Logo"
+              fill
+              className="object-contain"
+            />
           </div>
           <span className="text-2xl font-bold text-gray-900 tracking-tight">
-            Swifthub
+            Fizan
           </span>
         </Link>
 

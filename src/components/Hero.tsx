@@ -63,45 +63,9 @@ export default function Hero() {
           ></div>
         </div>
 
-        {/* Floating Badge Left: Users */}
-        <div className="absolute top-8 left-8 md:top-12 md:left-12 bg-white/10 backdrop-blur-xl border border-white/30 p-2 pr-6 rounded-full flex items-center gap-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-transform hover:scale-105 cursor-default">
-          <div className="flex -space-x-4">
-            {[1, 2, 3].map((id) => (
-              <div
-                key={id}
-                className="w-11 h-11 rounded-full border-[3px] border-white/80 overflow-hidden relative bg-gray-200"
-              >
-                <Image
-                  src={`https://i.pravatar.cc/100?img=${10 + id}`}
-                  alt="User"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="text-left">
-            <span className="block text-white font-bold text-sm leading-tight">
-              +10M User
-            </span>
-            <span className="block text-white/80 text-xs">
-              Trusted globally
-            </span>
-          </div>
-        </div>
 
-        {/* Floating Badge Right: Reviews */}
-        <div className="absolute top-8 right-8 md:top-12 md:right-12 bg-black/30 backdrop-blur-xl border border-white/10 p-2.5 px-6 rounded-full flex items-center gap-3 text-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-transform hover:scale-105 cursor-default">
-          <div className="bg-orange-500 rounded-full p-1.5">
-            <span className="text-white text-xs block">★</span>
-          </div>
-          <div className="flex flex-col text-left">
-            <span className="font-bold text-base leading-tight">845k+</span>
-            <span className="opacity-80 text-xs font-medium">
-              4.5 Verified Reviews
-            </span>
-          </div>
-        </div>
+
+
       </div>
     </section>
   );

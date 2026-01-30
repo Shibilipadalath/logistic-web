@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -6,7 +7,7 @@ export default function Footer() {
             {/* Background Text Overlay - Subtle and Large */}
             <div className="absolute opacity-[0.03] bottom-0 left-0 w-full select-none pointer-events-none overflow-hidden">
                 <span className="text-[20rem] md:text-[30rem] font-bold whitespace-nowrap leading-none tracking-tighter text-white block text-center translate-y-1/3">
-                    Swifthub
+                    Fizan
                 </span>
             </div>
 
@@ -17,12 +18,15 @@ export default function Footer() {
                     <div className="lg:col-span-4">
                         <div className="flex items-center gap-2 mb-6">
                             {/* Logo Icon */}
-                            <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center text-white">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
+                            <div className="w-10 h-10 relative flex items-center justify-center">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Fizan Logo"
+                                    fill
+                                    className="object-contain"
+                                />
                             </div>
-                            <span className="text-2xl font-bold tracking-tight">Swifthub</span>
+                            <span className="text-2xl font-bold tracking-tight">Fizan</span>
                         </div>
 
                         <p className="text-gray-400 leading-relaxed mb-8 max-w-sm">
@@ -99,7 +103,7 @@ export default function Footer() {
                                 <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <span>swifthub12@gmail.com</span>
+                                <span>contact@fizan.com</span>
                             </div>
                         </div>
                     </div>
@@ -108,7 +112,7 @@ export default function Footer() {
 
                 {/* Footer Bottom */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-center items-center text-sm text-gray-500">
-                    <p>© Swifthub 2025. Designed by <span className="text-orange-500">Opndoo</span></p>
+                    <p>© Fizan 2025. Designed by <span className="text-orange-500">Opndoo</span></p>
                 </div>
             </div>
         </footer>
