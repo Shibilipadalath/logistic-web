@@ -1,26 +1,23 @@
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section className="py-24 bg-white text-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
         {/* Left Side: Label + Graphic */}
-        <div className="relative flex flex-col justify-between h-full min-h-[300px]">
-          <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
+        <div className="flex flex-col h-full">
+          <span className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-8 block">
             {"// About Us //"}
           </span>
 
-          {/* Faded Background Graphic mimicking the silhouette */}
-          <div className="absolute inset-0 top-10 flex items-center justify-center pointer-events-none opacity-[0.03]">
-            <svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-full h-auto max-w-[400px]"
-            >
-              <path d="M2 16c0-3 2-5 5-5h10c3 0 5 2 5 5v2H2v-2z" />
-              <path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
-              <path d="M12 2v3" stroke="currentColor" strokeWidth="2" />
-            </svg>
+          <div className="relative w-full flex-grow min-h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl group">
+            <Image
+              src="/service1.png"
+              alt="Logistics Operations"
+              fill
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
           </div>
         </div>
 
@@ -28,7 +25,7 @@ export default function About() {
         <div className="space-y-12">
           {/* Headline */}
           <h2 className="text-4xl md:text-5xl font-medium leading-tight tracking-tight text-gray-400">
-            At <span className="text-black font-semibold">Swifthub</span>, We
+            At <span className="text-black font-semibold">Fizan</span>, We
             combine logistics{" "}
             <span className="text-black font-semibold">expertise</span> and
             digital innovation to deliver cargo with speed, confidence, and
