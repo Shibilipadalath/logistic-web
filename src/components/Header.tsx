@@ -1,44 +1,56 @@
-
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Header() {
-    return (
-        <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6">
-            <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="text-orange-500">
-                        {/* Ship/Logistics Icon */}
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            {/* Simplified ship hull */}
-                            <path d="M2 16c0-3 2-5 5-5h10c3 0 5 2 5 5v2H2v-2z" />
-                            {/* Cabin/Bridge */}
-                            <path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
-                            {/* Water lines */}
-                            <path d="M2 20h20" strokeWidth="2" className="opacity-50" />
-                        </svg>
-                    </div>
-                    <span className="text-2xl font-bold text-gray-900 tracking-tight">Swifthub</span>
-                </Link>
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="text-orange-500">
+            {/* Ship/Logistics Icon */}
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              {/* Simplified ship hull */}
+              <path d="M2 16c0-3 2-5 5-5h10c3 0 5 2 5 5v2H2v-2z" />
+              {/* Cabin/Bridge */}
+              <path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
+              {/* Water lines */}
+              <path d="M2 20h20" strokeWidth="2" className="opacity-50" />
+            </svg>
+          </div>
+          <span className="text-2xl font-bold text-gray-900 tracking-tight">
+            Swifthub
+          </span>
+        </Link>
 
-                {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-1 bg-gray-50/80 backdrop-blur-md px-2 py-1.5 rounded-full border border-gray-200/50 shadow-sm">
-                    {['Home', 'About Us', 'Services', 'Gallery', 'Contact'].map((item, i) => (
-                        <Link
-                            key={item}
-                            href={`/${item.toLowerCase().replace(' ', '-')}`}
-                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${i === 0 ? 'bg-white text-black shadow-sm' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'}`}
-                        >
-                            {item}
-                        </Link>
-                    ))}
-                </nav>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-1 bg-gray-50/80 backdrop-blur-md px-2 py-1.5 rounded-full border border-gray-200/50 shadow-sm">
+          {["Home", "About Us", "Services", "Gallery", "Contact"].map(
+            (item, i) => (
+              <Link
+                key={item}
+                href={`/${item.toLowerCase().replace(" ", "-")}`}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${i === 0 ? "bg-white text-black shadow-sm" : "text-gray-500 hover:text-gray-900 hover:bg-gray-100/50"}`}
+              >
+                {item}
+              </Link>
+            ),
+          )}
+        </nav>
 
-                {/* Action Button */}
-                <button className="bg-black text-white px-7 py-2.5 rounded-full text-sm font-bold hover:bg-gray-800 transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
-                    Track
-                </button>
-            </div>
-        </header>
-    )
+        {/* Action Button */}
+        <button className="bg-black text-white px-7 py-2.5 rounded-full text-sm font-bold hover:bg-gray-800 transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
+          Track
+        </button>
+      </div>
+    </header>
+  );
 }
