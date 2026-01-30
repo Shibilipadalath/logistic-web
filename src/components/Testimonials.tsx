@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Testimonials() {
   return (
@@ -90,19 +91,20 @@ export default function Testimonials() {
           {/* Right Column: Testimonial Content */}
           <div className="lg:col-span-8 flex flex-col justify-center">
             <blockquote className="text-3xl md:text-5xl font-medium text-gray-900 leading-tight tracking-tight mb-12">
-              "Working with Boulevard felt less like building with a creative
-              partner. Every visual, every word—just hit right."
+              &quot;Working with Boulevard felt less like building with a creative
+              partner. Every visual, every word—just hit right.&quot;
             </blockquote>
 
             {/* Author Profile */}
             <div className="flex items-center justify-between border-t border-gray-100 pt-8">
               <div className="flex items-center gap-4">
                 {/* Avatar */}
-                <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-200">
-                  <img
+                <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-200 relative">
+                  <Image
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=150&h=150"
                     alt="David Wilson"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
 
