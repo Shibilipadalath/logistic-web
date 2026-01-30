@@ -1,6 +1,6 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -28,6 +28,7 @@ export default function WorldMap() {
             center={[20, 0]}
             zoom={2}
             scrollWheelZoom={false}
+            zoomControl={false}
             className="w-full h-full outline-none"
             style={{ background: '#f8fafc' }}
         >
@@ -35,6 +36,7 @@ export default function WorldMap() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
                 url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             />
+            <ZoomControl position="bottomright" />
             {destinations.map((dest) => (
                 <Marker key={dest.code} position={dest.coords as [number, number]} icon={customIcon}>
                     <Popup closeButton={false} className="font-sans text-sm font-bold">
