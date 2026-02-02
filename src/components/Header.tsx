@@ -28,7 +28,7 @@ export default function Header() {
               className="object-contain"
             />
           </div>
-          <span className="text-2xl font-bold text-gray-900 tracking-tight">
+          <span className="text-2xl font-bold text-brand-black tracking-tight">
             Fizan
           </span>
         </Link>
@@ -42,8 +42,8 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
-                    ? "bg-black text-white shadow-md"
-                    : "text-gray-600 hover:text-black hover:bg-gray-100"
+                    ? "bg-brand-black text-white shadow-md"
+                    : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
                   }`}
               >
                 {item.name}
@@ -53,7 +53,7 @@ export default function Header() {
         </nav>
 
         {/* Action Button */}
-        <button className="bg-black text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-gray-800 transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
+        <button className="bg-brand-black text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-black/90 transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
           Track
         </button>
       </div>

@@ -32,7 +32,7 @@ export default function Team() {
     return (
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-4xl font-semibold mb-12 text-gray-900">
+                <h2 className="text-4xl font-semibold mb-12 text-brand-black">
                     Meet Our Professionals
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,22 +40,22 @@ export default function Team() {
                         <div
                             key={index}
                             className={`rounded-[2rem] p-8 flex flex-col justify-between min-h-[360px] relative group transition-all duration-300 hover:-translate-y-2 ${member.variant === "dark"
-                                    ? "bg-black text-white"
-                                    : "bg-gray-50 text-black hover:bg-gray-100"
+                                ? "bg-brand-black text-white"
+                                : "bg-brand-beige/20 text-brand-black hover:bg-brand-beige/40"
                                 }`}
                         >
                             {/* Top Row: Icon & Arrow */}
                             <div className="flex justify-between items-start mb-8">
                                 <div
                                     className={`w-12 h-12 rounded-full flex items-center justify-center ${member.variant === "dark"
-                                            ? "bg-white text-black"
-                                            : "bg-white text-black shadow-sm"
+                                        ? "bg-white text-brand-black"
+                                        : "bg-white text-brand-black shadow-sm"
                                         }`}
                                 >
                                     <User size={24} />
                                 </div>
                                 <ArrowUpRight
-                                    className={`transition-transform duration-300 group-hover:rotate-45 ${member.variant === "dark" ? "text-white" : "text-gray-400"
+                                    className={`transition-transform duration-300 group-hover:rotate-45 ${member.variant === "dark" ? "text-white" : "text-brand-grey"
                                         }`}
                                     size={24}
                                 />
@@ -72,8 +72,8 @@ export default function Team() {
                                 </p>
                                 <p
                                     className={`text-base leading-relaxed ${member.variant === "dark"
-                                            ? "text-gray-400"
-                                            : "text-gray-600"
+                                        ? "text-gray-400"
+                                        : "text-gray-600"
                                         }`}
                                 >
                                     {member.description}

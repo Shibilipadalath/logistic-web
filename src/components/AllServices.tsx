@@ -52,13 +52,13 @@ export default function AllServices() {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
-                    <span className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-4 block">
+                    <span className="text-sm font-bold tracking-widest text-brand-grey uppercase mb-4 block">
             // Our Expertise //
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-6">
                         Comprehensive Logistics Services
                     </h2>
-                    <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                    <p className="text-lg text-brand-grey max-w-2xl mx-auto">
                         We provide a full range of shipping, transportation, and warehousing
                         services customized to your business needs.
                     </p>
@@ -68,11 +68,11 @@ export default function AllServices() {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group bg-gray-50 rounded-[2.5rem] overflow-hidden hover:bg-gray-100 transition-colors duration-300 flex flex-col h-full"
+                            className="group bg-brand-beige/20 rounded-[2.5rem] overflow-hidden hover:bg-brand-beige/40 transition-colors duration-300 flex flex-col h-full"
                         >
                             {/* Image */}
                             <div className="relative w-full h-64 overflow-hidden">
-                                <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+                                <div className="absolute inset-0 bg-brand-beige/10 animate-pulse" />
                                 <Image
                                     src={service.image}
                                     alt={service.title}
@@ -84,16 +84,16 @@ export default function AllServices() {
                             {/* Content */}
                             <div className="p-8 flex flex-col flex-grow">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-black transition-colors">
+                                    <h3 className="text-2xl font-bold text-brand-black group-hover:text-brand-black transition-colors">
                                         {service.title}
                                     </h3>
-                                    <ArrowUpRight className="text-gray-400 group-hover:text-black transition-colors group-hover:rotate-45 duration-300" />
+                                    <ArrowUpRight className="text-brand-grey group-hover:text-brand-black transition-colors group-hover:rotate-45 duration-300" />
                                 </div>
-                                <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
+                                <p className="text-brand-grey leading-relaxed mb-6 flex-grow">
                                     {service.description}
                                 </p>
                                 <div className="mt-auto">
-                                    <button className="text-sm font-bold uppercase tracking-wider text-black underline decoration-gray-300 underline-offset-4 group-hover:decoration-black transition-all">
+                                    <button className="text-sm font-bold uppercase tracking-wider text-brand-black underline decoration-brand-grey underline-offset-4 group-hover:decoration-brand-black transition-all">
                                         Learn More
                                     </button>
                                 </div>

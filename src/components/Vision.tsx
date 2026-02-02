@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Vision() {
     return (
-        <section className="py-24 bg-[#FDF8F4]">
+        <section className="py-24 bg-brand-beige/20">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Left Side: Image */}
                 <div className="relative w-full h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
