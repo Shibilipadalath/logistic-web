@@ -22,17 +22,40 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-1">
-          {["Home", "About Us", "Services", "Gallery", "Contact"].map(
-            (item, i) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase().replace(" ", "-")}`}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${i === 0 ? "bg-black text-white shadow-md" : "text-gray-600 hover:text-black hover:bg-gray-100"}`}
-              >
-                {item}
-              </Link>
-            ),
-          )}
+          <Link
+            href="/"
+            className="px-5 py-2 rounded-full text-sm font-semibold bg-black text-white shadow-md"
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/about"
+            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
+          >
+            About Us
+          </Link>
+
+          <Link
+            href="/services"
+            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
+          >
+            Services
+          </Link>
+
+          <Link
+            href="/gallery"
+            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
+          >
+            Gallery
+          </Link>
+
+          <Link
+            href="/contact"
+            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
+          >
+            Contact
+          </Link>
         </nav>
 
         {/* Action Button */}
