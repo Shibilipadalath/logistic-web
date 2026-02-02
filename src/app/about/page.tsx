@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import About from "@/components/About";
+import AboutMain from "@/components/AboutMain";
 import Team from "@/components/Team";
 import Vision from "@/components/Vision";
 
@@ -10,7 +10,7 @@ export default function AboutPage() {
         <main className="bg-white min-h-screen">
             <Header />
             <div className="pt-24">
-                <About />
+                <AboutMain />
                 <Team />
                 <Vision />
             </div>
