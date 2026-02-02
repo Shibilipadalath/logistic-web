@@ -3,75 +3,57 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="py-24 bg-white text-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
-        {/* Left Side: Label + Graphic */}
-        <div className="flex flex-col h-full">
-          <span className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-8 block">
-            {"// About Us //"}
-          </span>
-
-          <div className="relative w-full flex-grow min-h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl group">
-            <Image
-              src="/service1.png"
-              alt="Logistics Operations"
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
-            />
-          </div>
+    <section className="py-24 bg-white text-black">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        {/* Top Section: Heading & Text */}
+        <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
+          <h2 className="text-5xl md:text-6xl font-normal tracking-tight text-gray-900">
+            About Us
+          </h2>
+          <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl">
+            We are committed to creating reliable and seamless logistics
+            solutions that help businesses transport goods efficiently across
+            borders. With years of expertise and a customer-first approach, we
+            ensure timely and secure deliveries worldwide.
+          </p>
         </div>
 
-        {/* Right Side: Content */}
-        <div className="space-y-12">
-          {/* Headline */}
-          <h2 className="text-4xl md:text-5xl font-medium leading-tight tracking-tight text-gray-400">
-            At <span className="text-black font-semibold">Fizan</span>, We
-            combine logistics{" "}
-            <span className="text-black font-semibold">expertise</span> and
-            digital innovation to deliver cargo with speed, confidence, and
-            impact worldwide.
-          </h2>
+        {/* Middle Section: Large Image */}
+        <div className="relative w-full h-[400px] md:h-[600px] mb-20 rounded-[2.5rem] overflow-hidden bg-gray-100">
+          <Image
+            src="/logis.png.jpg" // Using the team/logistics image from the previous AboutPage
+            alt="About Fizan Logistics"
+            fill
+            className="object-cover transition-transform duration-700 hover:scale-105"
+            priority
+          />
+        </div>
 
-          {/* Divider */}
-          <div className="h-px w-full bg-gray-200" />
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center">
-                15+{" "}
-                <span className="text-2xl text-gray-400 font-medium font-semibold -top-1">
-                  Years
-                </span>
-              </h3>
-              <p className="text-gray-500 text-m font-medium">
-                of shipping expertise
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1">
-                30+{" "}
-                <span className="text-2xl text-gray-400 font-medium font-semibold">
-                  Countries
-                </span>
-              </h3>
-              <p className="text-gray-500 text-m font-medium text-center">
-                covered
-              </p>
-            </div>
-
-            <div className="space-y-2 ">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center">
-                60K+{" "}
-                <span className="text-2xl text-gray-400 font-medium font-semibold text-center">
-                  TN
-                </span>
-              </h3>
-              <p className="text-gray-500 text-m font-medium">
-                Cargo handled worldwide
-              </p>
-            </div>
+        {/* Bottom Section: Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-t border-transparent pt-4">
+          <div className="flex flex-col gap-2">
+            <h3 className="text-5xl font-medium text-gray-900">1000+</h3>
+            <p className="text-gray-500 text-lg font-medium">
+              Clients helped globally
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-5xl font-medium text-gray-900">200+</h3>
+            <p className="text-gray-500 text-lg font-medium">
+              Logistics experts
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-5xl font-medium text-gray-900">95%</h3>
+            <p className="text-gray-500 text-lg font-medium">
+              Client satisfaction rate
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-5xl font-medium text-gray-900">15+</h3>
+            <p className="text-gray-500 text-lg font-medium">
+              Years of experience
+            </p>
           </div>
         </div>
       </div>

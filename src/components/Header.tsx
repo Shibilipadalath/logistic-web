@@ -1,7 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
+  ];
+
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 py-6">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg rounded-full mt-2">
@@ -22,40 +35,21 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-1">
-          <Link
-            href="/"
-            className="px-5 py-2 rounded-full text-sm font-semibold bg-black text-white shadow-md"
-          >
-            Home
-          </Link>
-
-          <Link
-            href="/about"
-            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
-          >
-            About Us
-          </Link>
-
-          <Link
-            href="/services"
-            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
-          >
-            Services
-          </Link>
-
-          <Link
-            href="/gallery"
-            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
-          >
-            Gallery
-          </Link>
-
-          <Link
-            href="/contact"
-            className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:text-black hover:bg-gray-100"
-          >
-            Contact
-          </Link>
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
+                    ? "bg-black text-white shadow-md"
+                    : "text-gray-600 hover:text-black hover:bg-gray-100"
+                  }`}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Action Button */}
