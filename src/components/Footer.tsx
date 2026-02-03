@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
@@ -57,9 +58,15 @@ export default function Footer() {
                     <div className="lg:col-span-2">
                         <h4 className="text-lg font-semibold mb-6">Navigation</h4>
                         <ul className="space-y-4">
-                            {['Home', 'About Us', 'Service', 'Gallery', 'Contact'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-brand-grey hover:text-brand-secondary transition-colors">{item}</a>
+                            {[
+                                { name: 'Home', href: '/' },
+                                { name: 'About Us', href: '/about' },
+                                { name: 'Services', href: '/services' },
+                                { name: 'Gallery', href: '/gallery' },
+                                { name: 'Contact', href: '/contact' }
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.href} className="text-brand-grey hover:text-brand-secondary transition-colors">{item.name}</Link>
                                 </li>
                             ))}
                         </ul>
