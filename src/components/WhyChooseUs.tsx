@@ -64,10 +64,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <div className="flex items-center gap-4 pt-8">
-                            <button className="bg-white text-black px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition-colors">
+                            <button className="bg-brand-primary text-white px-8 py-3.5 rounded-full font-bold hover:bg-brand-secondary transition-colors">
                                 Get a Quote
                             </button>
-                            <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-105 transition-transform text-black">
+                            <button className="w-12 h-12 bg-white text-brand-primary rounded-full flex items-center justify-center hover:scale-105 transition-transform hover:bg-brand-secondary hover:text-white">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7" />
                                     <polyline points="7 7 17 7 17 17" />
@@ -81,9 +81,9 @@ export default function WhyChooseUs() {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-[2rem] p-8 flex items-start gap-6 shadow-lg hover:translate-x-2 transition-transform duration-300"
+                                className="bg-white rounded-[2rem] p-8 flex items-start gap-6 shadow-lg hover:translate-x-2 transition-transform duration-300 hover:ring-2 hover:ring-brand-secondary border border-transparent"
                             >
-                                <div className="p-3 bg-gray-50 rounded-2xl shrink-0">
+                                <div className="p-3 bg-brand-primary/10 text-brand-primary rounded-2xl shrink-0">
                                     {feature.icon}
                                 </div>
                                 <div className="space-y-2">

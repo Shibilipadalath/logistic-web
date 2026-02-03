@@ -7,7 +7,7 @@ export default function RequestQuote() {
         <section className="py-24 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="bg-gray-50 rounded-[3rem] p-8 md:p-20 text-center">
+                <div className="bg-brand-primary/5 rounded-[3rem] p-8 md:p-20 text-center border border-brand-primary/10">
                     {/* Header */}
                     <div className="max-w-3xl mx-auto mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
@@ -31,7 +31,7 @@ export default function RequestQuote() {
                                 <input
                                     type="text"
                                     placeholder="Enter your name"
-                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all placeholder:text-gray-400"
+                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:bg-white transition-all placeholder:text-gray-400"
                                 />
                             </div>
 
@@ -43,7 +43,7 @@ export default function RequestQuote() {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all placeholder:text-gray-400"
+                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:bg-white transition-all placeholder:text-gray-400"
                                 />
                             </div>
 
@@ -55,7 +55,7 @@ export default function RequestQuote() {
                                 <input
                                     type="tel"
                                     placeholder="Enter phone number"
-                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition-all placeholder:text-gray-400"
+                                    className="w-full bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:bg-white transition-all placeholder:text-gray-400"
                                 />
                             </div>
 
@@ -63,7 +63,7 @@ export default function RequestQuote() {
                             <div className="w-full md:w-auto">
                                 <button
                                     type="submit"
-                                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg shadow-orange-500/20 whitespace-nowrap"
+                                    className="w-full md:w-auto bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg shadow-brand-primary/20 whitespace-nowrap"
                                 >
                                     Submit Now
                                 </button>

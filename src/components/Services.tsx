@@ -69,7 +69,7 @@ export default function Services() {
                         <div className="flex items-center gap-3">
                             <button
                                 onClick={prevSlide}
-                                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors cursor-pointer group"
+                                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors cursor-pointer group"
                             >
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-60 group-hover:opacity-100">
                                     <path d="M19 12H5" />
@@ -78,7 +78,7 @@ export default function Services() {
                             </button>
                             <button
                                 onClick={nextSlide}
-                                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors cursor-pointer group"
+                                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors cursor-pointer group"
                             >
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-60 group-hover:opacity-100">
                                     <path d="M5 12h14" />
@@ -88,7 +88,7 @@ export default function Services() {
                         </div>
 
                         {/* Counter */}
-                        <span className="text-gray-500 font-medium tracking-wide">
+                        <span className="text-brand-secondary font-medium tracking-wide">
                             {`(SERVICES ${String(startIndex + 1).padStart(2, '0')}/${String(services.length).padStart(2, '0')})`}
                         </span>
                     </div>
@@ -99,8 +99,9 @@ export default function Services() {
                     {currentServices.map((service) => (
                         <div key={service.id} className="group cursor-pointer select-none">
                             {/* Image Container */}
-                            <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden mb-6">
+                            <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden mb-6 group-hover:shadow-[0_20px_40px_-12px_rgba(14,79,85,0.2)] transition-shadow duration-500">
                                 <div className="absolute inset-0 bg-gray-100 skeleton-loader"></div>
+                                <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                                 <Image
                                     src={service.image}
                                     alt={service.title}
@@ -111,7 +112,7 @@ export default function Services() {
 
                             {/* Content */}
                             <div className="flex items-start justify-between border-t border-transparent pt-2">
-                                <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
+                                <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-brand-primary transition-colors">
                                     {service.title}
                                 </h3>
                                 <span className="text-gray-400 text-sm md:text-base font-medium whitespace-nowrap ml-4">

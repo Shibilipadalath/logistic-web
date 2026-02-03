@@ -40,7 +40,7 @@ export default function Team() {
             <div
               key={index}
               className="rounded-[2rem] p-8 flex flex-col justify-between min-h-[360px] relative group transition-all duration-300
-                 bg-gray-100 text-black hover:bg-black hover:text-white hover:-translate-y-2 cursor-pointer"
+                 bg-brand-beige/20 text-brand-black hover:bg-brand-primary hover:text-white hover:-translate-y-2 cursor-pointer"
             >
               {/* Top Row: Icon & Arrow */}
               <div className="flex justify-between items-start mb-8">

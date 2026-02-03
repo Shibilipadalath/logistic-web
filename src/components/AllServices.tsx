@@ -68,11 +68,11 @@ export default function AllServices() {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group bg-brand-beige/20 rounded-[2.5rem] overflow-hidden hover:bg-brand-beige/40 transition-colors duration-300 flex flex-col h-full"
+                            className="group bg-slate-50 border border-gray-100 rounded-[2.5rem] overflow-hidden hover:bg-white hover:border-brand-primary/30 hover:shadow-[0_20px_40px_-12px_rgba(14,79,85,0.15)] transition-all duration-300 flex flex-col h-full"
                         >
                             {/* Image */}
                             <div className="relative w-full h-64 overflow-hidden">
-                                <div className="absolute inset-0 bg-brand-beige/10 animate-pulse" />
+                                <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                                 <Image
                                     src={service.image}
                                     alt={service.title}
@@ -84,16 +84,16 @@ export default function AllServices() {
                             {/* Content */}
                             <div className="p-8 flex flex-col flex-grow">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-2xl font-bold text-brand-black group-hover:text-brand-black transition-colors">
+                                    <h3 className="text-2xl font-bold text-brand-black group-hover:text-brand-primary transition-colors">
                                         {service.title}
                                     </h3>
-                                    <ArrowUpRight className="text-brand-grey group-hover:text-brand-black transition-colors group-hover:rotate-45 duration-300" />
+                                    <ArrowUpRight className="text-brand-grey group-hover:text-brand-primary transition-colors group-hover:rotate-45 duration-300" />
                                 </div>
                                 <p className="text-brand-grey leading-relaxed mb-6 flex-grow">
                                     {service.description}
                                 </p>
                                 <div className="mt-auto">
-                                    <button className="text-sm font-bold uppercase tracking-wider text-brand-black underline decoration-brand-grey underline-offset-4 group-hover:decoration-brand-black transition-all">
+                                    <button className="text-sm font-bold uppercase tracking-wider text-brand-black underline decoration-brand-grey underline-offset-4 group-hover:text-brand-primary group-hover:decoration-brand-primary transition-all">
                                         Learn More
                                     </button>
                                 </div>

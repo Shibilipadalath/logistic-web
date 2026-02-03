@@ -10,7 +10,7 @@ export default function Testimonials() {
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
           <div className="max-w-3xl">
-            <span className="text-sm font-bold tracking-widest text-teal-600 uppercase mb-3 block">
+            <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
               {"// Testimonials //"}
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight uppercase">

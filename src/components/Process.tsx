@@ -75,7 +75,7 @@ export default function Process() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <span className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-3 block">
+            <span className="text-brand-secondary font-bold tracking-widest uppercase text-sm mb-3 block">
               {"// How It Works //"}
             </span>
             <h2 className="text-4xl md:text-5xl font-medium leading-tight">
@@ -98,7 +98,7 @@ export default function Process() {
           {steps.map((step, index) => (
             <div key={index} className="relative z-10 group">
               {/* Icon Container */}
-              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 group-hover:bg-orange-600 group-hover:border-orange-500 transition-all duration-300 shadow-xl">
+              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:border-brand-primary transition-all duration-300 shadow-xl">
                 <div className="text-gray-300 group-hover:text-white transition-colors">
                   {step.icon}
                 </div>
@@ -120,7 +120,7 @@ export default function Process() {
       </div>
 
       {/* Background Gradients */}
-      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-orange-600/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none" />
     </section>
   );

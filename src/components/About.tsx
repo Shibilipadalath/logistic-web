@@ -11,7 +11,8 @@ export default function About() {
             {"// About Us //"}
           </span>
 
-          <div className="relative w-full flex-grow min-h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl group">
+          <div className="relative w-full flex-grow min-h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl group border border-gray-100 hover:shadow-[0_20px_50px_-12px_rgba(14,79,85,0.3)] transition-all duration-500">
+            <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src="/service1.png"
               alt="Logistics Operations"
@@ -38,7 +39,7 @@ export default function About() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-black">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-primary">
                 15+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold -top-1">
                   Years
@@ -50,7 +51,7 @@ export default function About() {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-brand-black">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-brand-primary">
                 30+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold">
                   Countries
@@ -62,7 +63,7 @@ export default function About() {
             </div>
 
             <div className="space-y-2 ">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-black">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-primary">
                 60K+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold text-center">
                   TN

@@ -13,7 +13,7 @@ import Process from "@/components/Process";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white selection:bg-orange-100 selection:text-orange-900">
+    <main className="min-h-screen bg-white selection:bg-brand-secondary/20 selection:text-brand-primary">
       <Header />
       <Hero />
       <About />

@@ -42,7 +42,7 @@ export default function Footer() {
                                 { icon: "linkedin", path: "M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" },
                                 { icon: "instagram", path: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" } // Simplified paths
                             ].map((social, idx) => (
-                                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold transition-colors text-white">
+                                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-secondary transition-colors text-white">
                                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                         <path d={social.path} />
                                         {social.icon === 'linkedin' && <circle cx="4" cy="4" r="2" />}
@@ -59,7 +59,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {['Home', 'About Us', 'Service', 'Gallery', 'Contact'].map((item) => (
                                 <li key={item}>
-                                    <a href="#" className="text-brand-grey hover:text-brand-gold transition-colors">{item}</a>
+                                    <a href="#" className="text-brand-grey hover:text-brand-secondary transition-colors">{item}</a>
                                 </li>
                             ))}
                         </ul>
@@ -71,7 +71,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {['Standard', 'Express', 'International', 'Ware Housing', 'Overnight', 'Pallet'].map((item) => (
                                 <li key={item}>
-                                    <a href="#" className="text-brand-grey hover:text-brand-gold transition-colors">{item}</a>
+                                    <a href="#" className="text-brand-grey hover:text-brand-secondary transition-colors">{item}</a>
                                 </li>
                             ))}
                         </ul>
@@ -85,22 +85,22 @@ export default function Footer() {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="w-full bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-brand-gold transition-colors text-white placeholder:text-gray-500"
+                                className="w-full bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-brand-secondary transition-colors text-white placeholder:text-gray-500"
                             />
-                            <button className="absolute right-1 top-1 bottom-1 bg-brand-gold hover:bg-brand-gold/90 px-6 rounded-full text-sm font-bold transition-colors">
+                            <button className="absolute right-1 top-1 bottom-1 bg-brand-primary hover:bg-brand-secondary px-6 rounded-full text-sm font-bold transition-colors">
                                 Subscribe
                             </button>
                         </div>
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-3 text-brand-grey">
-                                <svg className="w-5 h-5 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 text-brand-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <span>(207) 555-0119</span>
                             </div>
                             <div className="flex items-center gap-3 text-brand-grey">
-                                <svg className="w-5 h-5 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 text-brand-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <span>contact@fizan.com</span>
@@ -112,7 +112,7 @@ export default function Footer() {
 
                 {/* Footer Bottom */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-center items-center text-sm text-brand-grey">
-                    <p>© Fizan 2025. Designed by <span className="text-brand-gold">Opndoo</span></p>
+                    <p>© Fizan 2025. Designed by <span className="text-brand-secondary">Opndoo</span></p>
                 </div>
             </div>
         </footer>

@@ -42,8 +42,8 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
-                    ? "bg-brand-black text-white shadow-md"
-                    : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
+                  ? "bg-brand-primary text-white shadow-md"
+                  : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
                   }`}
               >
                 {item.name}
@@ -53,7 +53,7 @@ export default function Header() {
         </nav>
 
         {/* Action Button */}
-        <button className="bg-brand-black text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-black/90 transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
+        <button className="bg-brand-primary text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
           Track
         </button>
       </div>

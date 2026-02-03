@@ -18,7 +18,7 @@ export default function ExportDestinations() {
 
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="text-sm font-bold tracking-widest text-[#FF6B35] uppercase mb-3 block">
+                    <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
                         {"// Global Network //"}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
@@ -38,7 +38,7 @@ export default function ExportDestinations() {
                 <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-12 opacity-80">
                     {['Global Shipping', 'Warehousing', 'Customs Brokerage', 'Supply Chain Management'].map((tag) => (
                         <div key={tag} className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#FF6B35] rounded-full" />
+                            <div className="w-2 h-2 bg-brand-secondary rounded-full" />
                             <span className="text-sm font-bold uppercase tracking-wider text-gray-500">{tag}</span>
                         </div>
                     ))}

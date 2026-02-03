@@ -23,7 +23,7 @@ const destinations = [
 
 const customIcon = L.divIcon({
   className: "custom-icon",
-  html: `<div class="w-4 h-4 bg-[#FF6B35] rounded-full border-2 border-white shadow-lg"></div>`,
+  html: `<div class="w-4 h-4 bg-[#0E4F55] rounded-full border-2 border-white shadow-lg"></div>`,
   iconSize: [16, 16],
   iconAnchor: [8, 8],
 });

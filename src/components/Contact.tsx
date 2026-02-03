@@ -18,7 +18,7 @@ export default function Contact() {
 
                         <div className="space-y-8">
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center shrink-0 text-black">
+                                <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 text-brand-primary">
                                     <MapPin size={24} />
                                 </div>
                                 <div>
@@ -34,7 +34,7 @@ export default function Contact() {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center shrink-0 text-black">
+                                <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 text-brand-primary">
                                     <Mail size={24} />
                                 </div>
                                 <div>
@@ -47,7 +47,7 @@ export default function Contact() {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center shrink-0 text-black">
+                                <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 text-brand-primary">
                                     <Phone size={24} />
                                 </div>
                                 <div>
@@ -62,7 +62,7 @@ export default function Contact() {
                     </div>
 
                     {/* Right Side: Form */}
-                    <div className="bg-gray-50 p-8 md:p-12 rounded-[2.5rem]">
+                    <div className="bg-brand-primary/5 p-8 md:p-12 rounded-[2.5rem] border border-brand-primary/10">
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
@@ -72,7 +72,7 @@ export default function Contact() {
                                     <input
                                         type="text"
                                         placeholder="John Doe"
-                                        className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+                                        className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -82,7 +82,7 @@ export default function Contact() {
                                     <input
                                         type="email"
                                         placeholder="john@example.com"
-                                        className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+                                        className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                                     />
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                                 <input
                                     type="tel"
                                     placeholder="+1 (555) 000-0000"
-                                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+                                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                                 />
                             </div>
 
@@ -102,7 +102,7 @@ export default function Contact() {
                                 <label className="text-sm font-semibold text-gray-900">
                                     Subject
                                 </label>
-                                <select className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all appearance-none">
+                                <select className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all appearance-none">
                                     <option>General Inquiry</option>
                                     <option>Request a Quote</option>
                                     <option>Track Shipment</option>
@@ -117,13 +117,13 @@ export default function Contact() {
                                 <textarea
                                     rows={4}
                                     placeholder="How can we help you?"
-                                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all resize-none"
+                                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all resize-none"
                                 />
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full bg-black text-white font-bold py-4 rounded-xl hover:bg-gray-800 transition-colors shadow-lg"
+                                className="w-full bg-brand-primary text-white font-bold py-4 rounded-xl hover:bg-brand-secondary transition-colors shadow-lg shadow-brand-primary/20"
                             >
                                 Send Message
                             </button>
