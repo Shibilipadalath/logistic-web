@@ -41,10 +41,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
-                  ? "bg-brand-primary text-white shadow-md"
-                  : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
-                  }`}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  isActive
+                    ? "bg-brand-primary text-white shadow-md"
+                    : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
+                }`}
               >
                 {item.name}
               </Link>
@@ -53,7 +54,14 @@ export default function Header() {
         </nav>
 
         {/* Action Button */}
-        <button className="bg-brand-primary text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl">
+        <button
+          onClick={() => {
+            document.getElementById("track-map")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          className="bg-brand-primary text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl"
+        >
           Track
         </button>
       </div>
