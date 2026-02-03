@@ -58,12 +58,12 @@ export default function Partners() {
                     {brands.map((brand, i) => (
                         <div
                             key={i}
-                            className="flex items-center justify-center gap-3 py-8 px-6 bg-gray-50 border border-gray-100 rounded-xl hover:bg-gray-100 hover:border-gray-200 transition-colors"
+                            className="flex items-center justify-center gap-3 py-8 px-6 bg-[#FDFBF7] border border-[#B8860B]/20 rounded-xl shadow-sm hover:shadow-md hover:bg-[#B8860B] hover:border-[#B8860B] transition-all duration-300 cursor-pointer group"
                         >
-                            <div className="text-gray-900">
+                            <div className="text-[#B8860B] group-hover:text-white transition-colors">
                                 {brand.icon}
                             </div>
-                            <span className="text-lg font-bold text-gray-900 tracking-tight">
+                            <span className="text-lg font-bold text-gray-900 tracking-tight group-hover:text-white">
                                 {brand.name}
                             </span>
                         </div>
