@@ -15,10 +15,7 @@ export default function Gallery() {
     <section className="py-17 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Gallery
-          </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             A glimpse into our world of logistics, operations, and the dedicated
             team behind every successful delivery.
           </p>

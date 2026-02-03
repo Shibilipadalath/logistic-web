@@ -5,12 +5,8 @@ export default function AboutMain() {
   return (
     <section className="py-20 bg-white text-brand-black">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        {/* Top Section: Heading & Text */}
-        <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-brand-black">
-            About Us
-          </h2>
-          <p className="text-brand-grey text-lg md:text-xl leading-relaxed max-w-2xl">
+        <div className="mb-16 text-center">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             We are committed to creating reliable and seamless logistics
             solutions that help businesses transport goods efficiently across
             borders. With years of expertise and a customer-first approach, we

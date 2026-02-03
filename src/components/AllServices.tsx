@@ -52,13 +52,7 @@ export default function AllServices() {
     <section className="py-17 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
-            // Our Expertise //
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-6">
-            Comprehensive Logistics Services
-          </h2>
-          <p className="text-lg text-brand-grey max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             We provide a full range of shipping, transportation, and warehousing
             services customized to your business needs.
           </p>

@@ -5,17 +5,17 @@ export default function Contact() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+        {/* Intro Text */}
+        <div className="text-center mb-16">
+          <p className="text-lg text-gray-700 md:text-xl leading-relaxed max-w-3xl mx-auto">
+            Have questions about our logistics services? Need a custom quote?
+            Fill out the form, and our team will get back to you shortly.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
           {/* Left Side: Contact Info */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-              Get in touch with us
-            </h2>
-            <p className="text-lg text-gray-500 mb-12 leading-relaxed">
-              Have questions about our logistics services? Need a custom quote?
-              Fill out the form, and our team will get back to you shortly.
-            </p>
-
             <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 text-brand-primary">
