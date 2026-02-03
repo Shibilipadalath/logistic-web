@@ -14,7 +14,7 @@ export default function About() {
             </span>
           </Reveal>
 
-          <SlideInRight className="relative w-full flex-grow min-h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl group border border-gray-100 hover:shadow-[0_20px_50px_-12px_rgba(184,134,11,0.3)] transition-all duration-500">
+          <SlideInRight className="relative w-full flex-grow min-h-[400px] rounded-xl overflow-hidden shadow-2xl group border border-gray-100 hover:shadow-[0_20px_50px_-12px_rgba(184,134,11,0.3)] transition-all duration-500">
             <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src="/service1.png"

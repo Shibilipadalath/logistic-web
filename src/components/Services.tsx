@@ -128,7 +128,7 @@ export default function Services() {
             <FadeIn key={service.id} delay={0.2 + (index * 0.2)} className="h-full">
               <div className="group cursor-pointer select-none h-full flex flex-col">
                 {/* Image Container */}
-                <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden mb-6 group-hover:shadow-[0_20px_40px_-12px_rgba(184,134,11,0.2)] transition-shadow duration-500">
+                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 group-hover:shadow-[0_20px_40px_-12px_rgba(184,134,11,0.2)] transition-shadow duration-500">
                   <div className="absolute inset-0 bg-gray-100 skeleton-loader"></div>
                   <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                   <Image
