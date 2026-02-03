@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
         {/* Left Side: Label + Graphic */}
         <div className="flex flex-col h-full">
-          <span className="text-sm font-bold tracking-widest text-brand-grey uppercase mb-8 block">
+          <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
             {"// About Us //"}
           </span>
 
