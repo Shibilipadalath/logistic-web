@@ -52,8 +52,8 @@ export default function Services() {
   const currentServices = services.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <section className="py-15 bg-white text-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 bg-white text-black">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <div className="space-y-4">

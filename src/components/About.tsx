@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="py-5 bg-white text-brand-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
+    <section className="py-10 bg-white text-brand-black relative overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
         {/* Left Side: Label + Graphic */}
         <div className="flex flex-col h-full">
-          <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
+          <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-8 block">
             {"// About Us //"}
           </span>
 
@@ -23,9 +23,9 @@ export default function About() {
         </div>
 
         {/* Right Side: Content */}
-        <div className="space-y-12">
+        <div className="space-y-12 mt-8">
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl font-medium leading-tight tracking-tight text-brand-grey">
+          <h2 className="text-4xl md:text-5xl font-medium leading-tight tracking-tight text-gray-500">
             At <span className="text-brand-black font-semibold">Fizan</span>, We
             combine logistics{" "}
             <span className="text-brand-black font-semibold">expertise</span>{" "}

@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative pt-36 pb-20 px-4 md:px-8 max-w-[1400px] mx-auto flex flex-col items-center text-center">
       {/* Headlines */}
       <div className="space-y-4 mb-8 fade-in-up">
-        <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-[#1a1a1a] tracking-tight leading-[1.1]">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#1a1a1a] tracking-tight leading-none">
           Seamless Logistics, <br />
           Faster{" "}
           <span className="font-serif italic text-[#B8860B] font-medium">
