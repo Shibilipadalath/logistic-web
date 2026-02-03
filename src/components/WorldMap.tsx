@@ -9,6 +9,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { FadeIn } from "./Reveal";
 
 const destinations = [
   { name: "New York", code: "US", coords: [40.7128, -74.006] },
@@ -28,32 +29,36 @@ const customIcon = L.divIcon({
   iconAnchor: [8, 8],
 });
 
+
+
 export default function WorldMap() {
   return (
-    <MapContainer
-      center={[20, 0]}
-      zoom={2}
-      scrollWheelZoom={false}
-      zoomControl={false}
-      className="w-full h-full outline-none"
-      style={{ background: "#f8fafc" }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <ZoomControl position="bottomright" />
-      {destinations.map((dest) => (
-        <Marker
-          key={dest.code}
-          position={dest.coords as [number, number]}
-          icon={customIcon}
-        >
-          <Popup closeButton={false} className="font-sans text-sm font-bold">
-            {dest.name}
-          </Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+    <FadeIn className="w-full h-full">
+      <MapContainer
+        center={[20, 0]}
+        zoom={2}
+        scrollWheelZoom={false}
+        zoomControl={false}
+        className="w-full h-full outline-none"
+        style={{ background: "#f8fafc" }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <ZoomControl position="bottomright" />
+        {destinations.map((dest) => (
+          <Marker
+            key={dest.code}
+            position={dest.coords as [number, number]}
+            icon={customIcon}
+          >
+            <Popup closeButton={false} className="font-sans text-sm font-bold">
+              {dest.name}
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+    </FadeIn>
   );
 }
