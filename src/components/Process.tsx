@@ -75,7 +75,7 @@ export default function Process() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <span className="text-brand-secondary font-bold tracking-widest uppercase text-sm mb-3 block">
+            <span className="text-[#B8860B] font-bold tracking-widest uppercase text-sm mb-3 block">
               {"// How It Works //"}
             </span>
             <h2 className="text-4xl md:text-5xl font-medium leading-tight">
@@ -98,7 +98,7 @@ export default function Process() {
           {steps.map((step, index) => (
             <div key={index} className="relative z-10 group">
               {/* Icon Container */}
-              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:border-brand-primary transition-all duration-300 shadow-xl">
+              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#8B5E00]  transition-all duration-300 shadow-xl">
                 <div className="text-gray-300 group-hover:text-white transition-colors">
                   {step.icon}
                 </div>

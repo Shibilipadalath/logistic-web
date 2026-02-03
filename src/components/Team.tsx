@@ -30,7 +30,7 @@ const professionals = [
 
 export default function Team() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-7 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-semibold mb-12 text-brand-black">
           Meet Our Professionals
@@ -39,8 +39,11 @@ export default function Team() {
           {professionals.map((member, index) => (
             <div
               key={index}
-              className="rounded-[2rem] p-8 flex flex-col justify-between min-h-[360px] relative group transition-all duration-300
-                 bg-brand-beige/20 text-brand-black hover:bg-brand-primary hover:text-white hover:-translate-y-2 cursor-pointer"
+              className="rounded-[2rem] p-8 flex flex-col justify-between min-h-[360px] relative group
+           transition-all duration-300
+           bg-brand-beige/20 text-brand-black
+           hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#8B5E00]
+           hover:text-white hover:-translate-y-2 cursor-pointer"
             >
               {/* Top Row: Icon & Arrow */}
               <div className="flex justify-between items-start mb-8">

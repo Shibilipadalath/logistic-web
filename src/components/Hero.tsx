@@ -8,7 +8,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-[#1a1a1a] tracking-tight leading-[1.1]">
           Seamless Logistics, <br />
           Faster{" "}
-          <span className="font-serif italic text-brand-secondary font-medium">
+          <span className="font-serif italic text-[#B8860B] font-medium">
             Deliveries
           </span>
         </h1>
@@ -44,10 +44,23 @@ export default function Hero() {
           {/* Main Notch Block */}
           <div className="bg-white pt-0 px-2 pb-2 rounded-b-[2.5rem] relative z-20 -mt-0.5 h-24 flex items-center">
             <div className="flex items-center gap-4 px-4 pt-2">
-              <button className="bg-brand-primary hover:bg-brand-secondary text-white px-7 py-3 rounded-full text-base font-bold transition-all shadow-[0_10px_30px_-10px_rgba(14,79,85,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(14,79,85,0.6)] hover:-translate-y-1 cursor-pointer">
+              <button
+                className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] 
+  text-white px-7 py-3 rounded-full text-base font-bold transition-all 
+  shadow-[0_10px_30px_-10px_rgba(184,134,11,0.5)] 
+  hover:from-[#B8860B]  hover:to-[#B8860B]
+  hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
+  hover:-translate-y-1 cursor-pointer"
+              >
                 Our Services
               </button>
-              <button className="bg-white border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white px-7 py-3 rounded-full text-base font-bold transition-all cursor-pointer">
+
+              <button
+                className="bg-white border-2 border-[#B8860B] text-[#B8860B] 
+  hover:bg-[#B8860B] hover:text-white 
+  px-7 py-3 rounded-full text-base font-bold 
+  transition-all hover:-translate-y-1 cursor-pointer"
+              >
                 Contact Us
               </button>
             </div>
@@ -62,10 +75,6 @@ export default function Hero() {
             }}
           ></div>
         </div>
-
-
-
-
       </div>
     </section>
   );

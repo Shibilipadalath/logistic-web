@@ -43,7 +43,7 @@ export default function Header() {
                 href={item.href}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                   isActive
-                    ? "bg-brand-primary text-white shadow-md"
+                    ? "bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white shadow-md"
                     : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
                 }`}
               >
@@ -60,7 +60,7 @@ export default function Header() {
               behavior: "smooth",
             });
           }}
-          className="bg-brand-primary text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl"
+          className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl"
         >
           Track
         </button>

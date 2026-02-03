@@ -18,11 +18,11 @@ export default function ExportDestinations() {
   );
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
+          <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
             {"// Global Network //"}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
@@ -51,7 +51,7 @@ export default function ExportDestinations() {
             "Supply Chain Management",
           ].map((tag) => (
             <div key={tag} className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-brand-secondary rounded-full" />
+              <div className="w-2 h-2 bg-[#B8860B] rounded-full" />
               <span className="text-sm font-bold uppercase tracking-wider text-gray-500">
                 {tag}
               </span>

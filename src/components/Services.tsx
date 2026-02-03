@@ -52,12 +52,12 @@ export default function Services() {
   const currentServices = services.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <section className="py-20 bg-white text-black">
+    <section className="py-15 bg-white text-black">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <div className="space-y-4">
-            <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
+            <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
               {"// Our Services //"}
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-black">
@@ -70,7 +70,7 @@ export default function Services() {
             <div className="flex items-center gap-3">
               <button
                 onClick={prevSlide}
-                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors cursor-pointer group"
+                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#B8860B] hover:text-white transition-colors cursor-pointer group"
               >
                 <svg
                   width="24"
@@ -89,7 +89,7 @@ export default function Services() {
               </button>
               <button
                 onClick={nextSlide}
-                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors cursor-pointer group"
+                className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#B8860B] hover:text-white transition-colors cursor-pointer group"
               >
                 <svg
                   width="24"
@@ -109,7 +109,7 @@ export default function Services() {
             </div>
 
             {/* Counter */}
-            <span className="text-brand-secondary font-medium tracking-wide">
+            <span className="text-[#B8860B] font-medium tracking-wide">
               {`(SERVICES ${String(startIndex + 1).padStart(2, "0")}/${String(services.length).padStart(2, "0")})`}
             </span>
           </div>
@@ -133,7 +133,7 @@ export default function Services() {
 
               {/* Content */}
               <div className="flex items-start justify-between border-t border-transparent pt-2">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-brand-primary transition-colors">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#B8860B] transition-colors">
                   {service.title}
                 </h3>
                 <span className="text-gray-400 text-sm md:text-base font-medium whitespace-nowrap ml-4">

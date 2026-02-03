@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="py-24 bg-white text-brand-black relative overflow-hidden">
+    <section className="py-5 bg-white text-brand-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
         {/* Left Side: Label + Graphic */}
         <div className="flex flex-col h-full">
-          <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
+          <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
             {"// About Us //"}
           </span>
 
@@ -39,7 +39,7 @@ export default function About() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-primary">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-[#B8860B]">
                 15+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold -top-1">
                   Years
@@ -51,7 +51,7 @@ export default function About() {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-brand-primary">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-[#B8860B]">
                 30+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold">
                   Countries
@@ -63,7 +63,7 @@ export default function About() {
             </div>
 
             <div className="space-y-2 ">
-              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-brand-primary">
+              <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-[#B8860B]">
                 60K+{" "}
                 <span className="text-2xl text-brand-grey font-medium font-semibold text-center">
                   TN

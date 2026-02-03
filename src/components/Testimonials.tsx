@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-5 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
@@ -69,15 +69,13 @@ export default function Testimonials() {
                 best
               </h3>
             </div>
-
-
           </div>
 
           {/* Right Column: Testimonial Content */}
           <div className="lg:col-span-8 flex flex-col justify-center">
             <blockquote className="text-3xl md:text-5xl font-medium text-gray-900 leading-tight tracking-tight mb-12">
-              &quot;Working with Boulevard felt less like building with a creative
-              partner. Every visual, every word—just hit right.&quot;
+              &quot;Working with Boulevard felt less like building with a
+              creative partner. Every visual, every word—just hit right.&quot;
             </blockquote>
 
             {/* Author Profile */}
@@ -108,7 +106,6 @@ export default function Testimonials() {
                 className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center hover:bg-gray-100 transition-colors text-gray-900"
               >
                 {/* X / Twitter Icon */}
-
               </a>
             </div>
           </div>
