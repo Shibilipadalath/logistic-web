@@ -19,7 +19,7 @@ export default function AboutMain() {
         </div>
 
         {/* Middle Section: Large Image */}
-        <div className="relative w-full h-[400px] md:h-[600px] mb-20 rounded-[2.5rem] overflow-hidden bg-brand-beige/20 group hover:shadow-[0_20px_50px_-12px_rgba(14,79,85,0.3)] transition-all duration-500">
+        <div className="relative w-full h-[400px] md:h-[600px] mb-20 rounded-[2.5rem] overflow-hidden bg-brand-beige/20 group hover:shadow-[0_20px_50px_-12px_rgba(184,134,11,0.3)] transition-all duration-500">
           <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
           <Image
             src="/logis.png.jpg" // Using the team/logistics image from the previous AboutPage

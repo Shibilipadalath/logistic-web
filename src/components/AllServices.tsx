@@ -68,7 +68,7 @@ export default function AllServices() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group bg-slate-50 border border-gray-100 rounded-[2.5rem] overflow-hidden hover:bg-white hover:border-brand-primary/30 hover:shadow-[0_20px_40px_-12px_rgba(14,79,85,0.15)] transition-all duration-300 flex flex-col h-full"
+              className="group bg-slate-50 border border-gray-100 rounded-[2.5rem] overflow-hidden hover:bg-white hover:border-brand-primary/30 hover:shadow-[0_20px_40px_-12px_rgba(184,134,11,0.15)] transition-all duration-300 flex flex-col h-full"
             >
               {/* Image */}
               <div className="relative w-full h-64 overflow-hidden">
