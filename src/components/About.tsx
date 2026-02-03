@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="py-10 bg-white text-brand-black relative overflow-hidden">
+    <section className="py-8 bg-white text-brand-black relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 md:gap-24 items-start">
         {/* Left Side: Label + Graphic */}
         <div className="flex flex-col h-full">
