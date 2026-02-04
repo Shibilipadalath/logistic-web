@@ -188,7 +188,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-center items-center text-sm text-brand-grey">
           <p>
             © Fizan 2025. Designed by{" "}
-            <span className="text-brand-secondary">Opndoo</span>
+            <span className="text-brand-secondary">Willowy</span>
           </p>
         </div>
       </div>

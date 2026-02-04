@@ -2,12 +2,20 @@ import React from "react";
 import Image from "next/image";
 
 const images = [
-  { src: "/service4.png", alt: "Logistics Fleet" },
-  { src: "/service2.png", alt: "Warehouse Operations" },
-  { src: "/service3.png", alt: "Cargo Handling" },
-  { src: "/service1.png", alt: "Global Shipping" },
-  { src: "/logis.png.jpg", alt: "Team at Work" },
-  { src: "/express.jpg", alt: "Express Delivery" },
+  { src: "/service4.png", alt: "Logistics Fleet", title: "Logistics Fleet" },
+  {
+    src: "/service2.png",
+    alt: "Warehouse Operations",
+    title: "Warehouse Distribution",
+  },
+  { src: "/service3.png", alt: "Cargo Handling", title: "Cargo Handling" },
+  { src: "/service1.png", alt: "Global Shipping", title: "Global Shipping" },
+  {
+    src: "/logis.png.jpg",
+    alt: "Team at Work",
+    title: "International Shipping",
+  },
+  { src: "/express.jpg", alt: "Express Delivery", title: "Express Delivery" },
 ];
 
 export default function Gallery() {
@@ -33,7 +41,23 @@ export default function Gallery() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-300" />
+
+              {/* Blurred banner with title */}
+              <div
+                className="
+  absolute bottom-4 left-4 right-4
+  opacity-45 group-hover:opacity-100
+  transition-all duration-300
+"
+              >
+                <div className="bg-black/50 backdrop-blur-md px-6 py-3 rounded-lg">
+                  <p className="text-white text-lg font-semibold">
+                    {img.title}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

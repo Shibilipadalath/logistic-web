@@ -86,11 +86,7 @@ export default function AllServices() {
                 <p className="text-brand-grey leading-relaxed mb-6 flex-grow">
                   {service.description}
                 </p>
-                <div className="mt-auto">
-                  <button className="text-sm font-bold uppercase tracking-wider text-brand-black underline decoration-brand-grey underline-offset-4 group-hover:text-brand-primary group-hover:decoration-brand-primary transition-all">
-                    Learn More
-                  </button>
-                </div>
+                <div className="mt-auto"></div>
               </div>
             </div>
           ))}

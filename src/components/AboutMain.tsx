@@ -27,27 +27,27 @@ export default function AboutMain() {
         </div>
 
         {/* Bottom Section: Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-t border-transparent pt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-t border-transparent pt-4 ">
           <div className="flex flex-col gap-2">
-            <h3 className="text-5xl font-medium text-brand-primary">1000+</h3>
+            <h3 className="text-5xl font-semibold text-brand-primary">1000+</h3>
             <p className="text-brand-grey text-lg font-medium">
               Clients helped globally
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-5xl font-medium text-brand-primary">200+</h3>
+            <h3 className="text-5xl font-semibold  text-brand-primary">200+</h3>
             <p className="text-brand-grey text-lg font-medium">
               Logistics experts
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-5xl font-medium text-brand-primary">95%</h3>
+            <h3 className="text-5xl font-semibold  text-brand-primary">95%</h3>
             <p className="text-brand-grey text-lg font-medium">
               Client satisfaction rate
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-5xl font-medium text-brand-primary">15+</h3>
+            <h3 className="text-5xl font-semibold text-brand-primary">15+</h3>
             <p className="text-brand-grey text-lg font-medium">
               Years of experience
             </p>

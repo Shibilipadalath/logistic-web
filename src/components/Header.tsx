@@ -19,17 +19,6 @@ export default function Header() {
     { name: "Contact", href: "/contact" },
   ];
 
-  const handleTrackClick = () => {
-    setIsOpen(false);
-    if (pathname === "/") {
-      document.getElementById("track-map")?.scrollIntoView({
-        behavior: "smooth",
-      });
-    } else {
-      router.push("/#track-map");
-    }
-  };
-
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 py-2">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg rounded-full mt-2 relative">
@@ -56,10 +45,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
-                  ? "bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white shadow-md"
-                  : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
-                  }`}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  isActive
+                    ? "bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white shadow-md"
+                    : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
+                }`}
               >
                 {item.name}
               </Link>
@@ -69,13 +59,6 @@ export default function Header() {
 
         {/* Action Button & Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <button
-            onClick={handleTrackClick}
-            className="hidden md:block bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl"
-          >
-            Track
-          </button>
-
           {/* Hamburger Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -96,21 +79,16 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${isActive
-                  ? "bg-[#B8860B]/10 text-[#B8860B]"
-                  : "text-brand-grey hover:text-brand-black hover:bg-gray-50"
-                  }`}
+                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${
+                  isActive
+                    ? "bg-[#B8860B]/10 text-[#B8860B]"
+                    : "text-brand-grey hover:text-brand-black hover:bg-gray-50"
+                }`}
               >
                 {item.name}
               </Link>
             );
           })}
-          <button
-            onClick={handleTrackClick}
-            className="mt-2 bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-5 py-3 rounded-xl text-lg font-bold shadow-lg active:scale-95 transition-transform"
-          >
-            Track
-          </button>
         </div>
       )}
     </header>

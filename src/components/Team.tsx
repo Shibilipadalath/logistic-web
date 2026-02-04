@@ -3,27 +3,27 @@ import { User, ArrowUpRight, TrendingUp, ShieldCheck } from "lucide-react";
 
 const professionals = [
   {
-    name: "Johnathan Smith",
-    role: "Chief Executive Officer",
-    image: "/team1.jpg", // Placeholder
+    name: "Our Vision",
+    role: "What Drives Us Forward",
+    image: "/vision.jpg", // optional: icon or abstract image
     description:
-      "Guiding our strategic direction with over 20 years of experience in global logistics and supply chain management.",
+      "To become a globally trusted logistics partner by delivering innovative, reliable, and customer-centric supply chain solutions that connect businesses worldwide.",
     variant: "dark",
   },
   {
-    name: "Sarah Johnson",
-    role: "Head of Operations",
-    image: "/team2.jpg", // Placeholder
+    name: "Our Mission",
+    role: "What We Do Every Day",
+    image: "/mission.jpg",
     description:
-      "Ensuring smooth daily operations and overseeing our global network to deliver efficiency and reliability.",
+      "To provide efficient, secure, and timely logistics services by leveraging technology, expertise, and a strong global network while exceeding customer expectations.",
     variant: "light",
   },
   {
-    name: "Michael Brown",
-    role: "Logistics Manager",
-    image: "/team3.jpg", // Placeholder
+    name: "Our Guidelines",
+    role: "How We Work",
+    image: "/guidelines.jpg",
     description:
-      "Expert in international shipping regulations and customs clearance, ensuring your goods reach safely.",
+      "We operate with integrity, transparency, and accountability, prioritizing safety, compliance, sustainability, and continuous improvement in every shipment we handle.",
     variant: "light",
   },
 ];
@@ -32,9 +32,6 @@ export default function Team() {
   return (
     <section className="py-7 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-semibold mb-12 text-brand-black">
-          Meet Our Professionals
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {professionals.map((member, index) => (
             <div
@@ -47,9 +44,6 @@ export default function Team() {
             >
               {/* Top Row: Icon & Arrow */}
               <div className="flex justify-between items-start mb-8">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white text-black shadow-sm group-hover:text-black">
-                  <User size={24} />
-                </div>
                 <ArrowUpRight
                   className="transition-transform duration-300 group-hover:rotate-45 group-hover:text-white text-gray-700"
                   size={24}
@@ -58,9 +52,13 @@ export default function Team() {
 
               {/* Bottom Row: Info */}
               <div>
-                <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-sm font-medium mb-4">{member.role}</p>
-                <p className="text-base leading-relaxed">
+                <h3 className="text-2xl font-semibold mb-2 text-center ">
+                  {member.name}
+                </h3>
+                <p className="text-sm font-medium mb-4 text-center text-grey">
+                  {member.role}
+                </p>
+                <p className="text-base leading-relaxed text-justify">
                   {member.description}
                 </p>
               </div>

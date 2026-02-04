@@ -18,17 +18,25 @@ export default function Contact() {
           <div>
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 text-brand-primary">
+                <a
+                  href="https://maps.app.goo.gl/PACkg2BsRvUZipmX7?g_st=aw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-brand-primary/10 
+               flex items-center justify-center shrink-0 
+               text-brand-primary hover:scale-105 transition cursor-pointer"
+                >
                   <MapPin size={24} />
-                </div>
+                </a>
+
                 <div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-1">
                     Visit our office
                   </h4>
                   <p className="text-gray-500">
-                    123 Logistics Way, Suite 400
+                    Building No 135 , Zone, 91 Street No 3087
                     <br />
-                    New York, NY 10001, USA
+                    Birkat Al Awamer, Qatar
                   </p>
                 </div>
               </div>
