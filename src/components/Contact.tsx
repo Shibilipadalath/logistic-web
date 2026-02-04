@@ -72,7 +72,7 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
+                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                   />
                 </div>
                 <div className="space-y-2">
@@ -82,7 +82,7 @@ export default function Contact() {
                   <input
                     type="email"
                     placeholder="john@example.com"
-                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
+                    className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                   />
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   placeholder="+1 (555) 000-0000"
-                  className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
+                  className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"
                 />
               </div>
 
@@ -102,7 +102,7 @@ export default function Contact() {
                 <label className="text-sm font-semibold text-gray-900">
                   Subject
                 </label>
-                <select className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all appearance-none">
+                <select className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all appearance-none">
                   <option>General Inquiry</option>
                   <option>Request a Quote</option>
                   <option>Track Shipment</option>
@@ -117,7 +117,7 @@ export default function Contact() {
                 <textarea
                   rows={4}
                   placeholder="How can we help you?"
-                  className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all resize-none"
+                  className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all resize-none"
                 />
               </div>
 
