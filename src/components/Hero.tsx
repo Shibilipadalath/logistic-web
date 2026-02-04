@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Reveal, FadeIn } from "./Reveal";
 
 export default function Hero() {
@@ -48,25 +49,27 @@ export default function Hero() {
             {/* Main Notch Block */}
             <div className="bg-white pt-0 px-2 pb-2 rounded-b-[2.5rem] relative z-20 -mt-0.5 h-24 flex items-center">
               <div className="flex items-center gap-4 px-4 pt-2">
-                <button
+                <Link
+                  href="/services"
                   className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] 
     text-white px-7 py-3 rounded-full text-base font-bold transition-all 
     shadow-[0_10px_30px_-10px_rgba(184,134,11,0.5)] 
     hover:from-[#B8860B]  hover:to-[#B8860B]
     hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
-    hover:-translate-y-1 cursor-pointer"
+    hover:-translate-y-1 cursor-pointer flex items-center justify-center text-center"
                 >
                   Our Services
-                </button>
+                </Link>
 
-                <button
+                <Link
+                  href="/contact"
                   className="bg-white border-2 border-[#B8860B] text-[#B8860B] 
     hover:bg-[#B8860B] hover:text-white 
     px-7 py-3 rounded-full text-base font-bold 
-    transition-all hover:-translate-y-1 cursor-pointer"
+    transition-all hover:-translate-y-1 cursor-pointer flex items-center justify-center text-center"
                 >
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
 

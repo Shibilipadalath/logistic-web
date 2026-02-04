@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -17,6 +18,17 @@ export default function Header() {
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const handleTrackClick = () => {
+    setIsOpen(false);
+    if (pathname === "/") {
+      document.getElementById("track-map")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      router.push("/#track-map");
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 py-2">
@@ -58,11 +70,7 @@ export default function Header() {
         {/* Action Button & Mobile Toggle */}
         <div className="flex items-center gap-4">
           <button
-            onClick={() => {
-              document.getElementById("track-map")?.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
+            onClick={handleTrackClick}
             className="hidden md:block bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-brand-secondary transition-transform active:scale-95 cursor-pointer shadow-lg hover:shadow-xl"
           >
             Track
@@ -98,12 +106,7 @@ export default function Header() {
             );
           })}
           <button
-            onClick={() => {
-              setIsOpen(false);
-              document.getElementById("track-map")?.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
+            onClick={handleTrackClick}
             className="mt-2 bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-5 py-3 rounded-xl text-lg font-bold shadow-lg active:scale-95 transition-transform"
           >
             Track
