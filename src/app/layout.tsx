@@ -25,6 +25,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fizan - Seamless Logistics",
   description: "Streamlined freight management with real-time tracking.",
+  icons: {
+    icon: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({
