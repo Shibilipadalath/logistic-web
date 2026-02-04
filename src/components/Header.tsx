@@ -25,14 +25,14 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 group ml-4">
           <div className="relative w-8 h-8">
             <Image
-              src="/logo.png"
-              alt="Fizan Logo"
+              src="/logo.jpeg"
+              alt="Fizan International Logo"
               fill
               className="object-contain"
             />
           </div>
           <span className="text-2xl font-bold text-brand-black tracking-tight">
-            Fizan
+            Fizan International
           </span>
         </Link>
 

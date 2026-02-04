@@ -20,7 +20,7 @@ export default function Footer() {
               {/* Logo Icon */}
               <div className="w-10 h-10 relative flex items-center justify-center">
                 <Image
-                  src="/logo.png"
+                  src="/logo.jpeg"
                   alt="Fizan Logo"
                   fill
                   className="object-contain"
