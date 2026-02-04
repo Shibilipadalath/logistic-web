@@ -19,6 +19,31 @@ export default function Hero() {
             Streamlined freight management with real-time tracking.
           </p>
         </div>
+
+        {/* Mobile Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 justify-center mb-10 md:hidden w-full max-w-md mx-auto">
+          <Link
+            href="/services"
+            className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] 
+     text-white px-8 py-3 rounded-full text-base font-bold transition-all 
+     shadow-[0_10px_30px_-10px_rgba(184,134,11,0.5)] 
+     hover:from-[#B8860B]  hover:to-[#B8860B]
+     hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
+     hover:-translate-y-1 cursor-pointer w-full sm:w-auto flex items-center justify-center text-center"
+          >
+            Our Services
+          </Link>
+
+          <Link
+            href="/contact"
+            className="bg-white border-2 border-[#B8860B] text-[#B8860B] 
+     hover:bg-[#B8860B] hover:text-white 
+     px-8 py-3 rounded-full text-base font-bold 
+     transition-all hover:-translate-y-1 cursor-pointer w-full sm:w-auto flex items-center justify-center text-center"
+          >
+            Contact Us
+          </Link>
+        </div>
       </Reveal>
 
       {/* Image Section */}
@@ -36,7 +61,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
 
           {/* Top Notch Buttons */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 flex items-start justify-center">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 hidden md:flex items-start justify-center">
             {/* Left Smoother (Concave Fillet) */}
             <div
               className="w-16 h-16 relative -mr-1 z-10"
