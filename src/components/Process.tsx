@@ -105,7 +105,7 @@ export default function Process() {
               </div>
 
               {/* Number */}
-              <span className="text-6xl font-bold text-gray-800 absolute top-4 right-50 opacity-75 select-none group-hover:text-gray-700 transition-colors">
+              <span className="text-6xl font-bold text-[#B8860B] absolute top-4 right-50 opacity-75 select-none group-hover:text-[#8B5E00] transition-colors">
                 {step.number}
               </span>
 
