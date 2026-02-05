@@ -16,17 +16,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center mb-6">
               {/* Logo Icon */}
-              <div className="w-10 h-10 relative flex items-center justify-center">
+              <div className="w-40 h-10 relative">
                 <Image
-                  src="/logo.jpeg"
+                  src="/main_logo.jpeg"
                   alt="Fizan Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-2xl font-bold tracking-tight">Fizan</span>
             </div>
 
             <p className="text-brand-grey leading-relaxed mb-8 max-w-sm">
