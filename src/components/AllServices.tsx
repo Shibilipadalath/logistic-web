@@ -54,7 +54,9 @@ export default function AllServices() {
         <div className="mb-24 text-center max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10 uppercase">
             Full Spectrum <br />
-            <span className="font-serif italic text-brand-primary lowercase normal-case">Logistics Excellence</span>
+            <span className="font-serif italic text-brand-primary lowercase normal-case">
+              Logistics Excellence
+            </span>
           </h2>
           <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
             <span className="h-px w-12 bg-current"></span>
@@ -63,7 +65,11 @@ export default function AllServices() {
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
             We provide a full range of shipping, transportation, and warehousing
-            services <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20">customized to your business needs</span>, ensuring your supply chain never stops.
+            services{" "}
+            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20">
+              customized to your business needs
+            </span>
+            , ensuring your supply chain never stops.
           </p>
         </div>
 
@@ -96,7 +102,7 @@ export default function AllServices() {
               <div className="p-10 flex flex-col flex-grow relative z-10">
                 <div className="mb-4">
                   <span className="text-xs font-bold tracking-widest text-brand-primary uppercase mb-2 block opacity-70">
-                    Service {service.id.toString().padStart(2, '0')}
+                    Service {service.id.toString().padStart(2, "0")}
                   </span>
                   <h3 className="text-3xl font-black text-brand-black transition-colors duration-300">
                     {service.title}
@@ -105,12 +111,6 @@ export default function AllServices() {
                 <p className="text-gray-600 leading-relaxed text-lg flex-grow">
                   {service.description}
                 </p>
-
-                {/* Bottom decorative bar */}
-                <div className="mt-8 pt-6 border-t border-gray-50 flex items-center text-brand-primary font-bold text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  Learn More
-                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </div>
               </div>
             </div>
           ))}

@@ -57,13 +57,13 @@ export default function Team() {
 
               {/* Bottom Row: Info */}
               <div className="relative z-10">
-                <span className="text-xs font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70">
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70 text-center">
                   {member.role}
                 </span>
-                <h3 className="text-3xl font-black mb-4 group-hover:text-brand-primary transition-colors">
+                <h3 className="text-3xl font-black mb-4 group-hover:text-brand-primary transition-colors text-center">
                   {member.name}
                 </h3>
-                <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors text-justify">
                   {member.description}
                 </p>
               </div>

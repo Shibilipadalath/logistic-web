@@ -9,7 +9,9 @@ export default function Contact() {
         <div className="mb-24 text-center max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10">
             Let&apos;s Start a <br />
-            <span className="font-serif italic text-brand-primary lowercase normal-case">Conversation</span>
+            <span className="font-serif italic text-brand-primary lowercase normal-case">
+              Conversation
+            </span>
           </h2>
           <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
             <span className="h-px w-12 bg-current"></span>
@@ -18,33 +20,64 @@ export default function Contact() {
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
             Have questions about our logistics services or need a custom quote?
-            <span className="text-brand-black font-extrabold border-b border-brand-primary/20"> Reach out to our experts</span> and we&apos;ll get back to you shortly.
+            <span className="text-brand-black font-extrabold border-b border-brand-primary/20">
+              {" "}
+              Reach out to our experts
+            </span>{" "}
+            and we&apos;ll get back to you shortly.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
           {/* Left Side: Contact Info */}
           <div className="space-y-6">
-            <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
-              <div className="flex items-center gap-6 mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
-                  <MapPin size={28} />
+            <a
+              href="https://maps.app.goo.gl/kDZNdfaZJRjyXSQ86?g_st=aw"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Open location in Google Maps"
+              className="block"
+            >
+              <div
+                className="bg-slate-50 p-10 rounded-[2.5rem] 
+                  border border-gray-100 
+                  hover:border-brand-primary/30 
+                  hover:shadow-xl 
+                  transition-all duration-500 
+                  cursor-pointer"
+              >
+                <div className="flex items-center gap-6 mb-4">
+                  <div
+                    className="w-14 h-14 rounded-2xl bg-brand-primary/10 
+                      flex items-center justify-center 
+                      text-brand-primary"
+                  >
+                    <MapPin size={28} />
+                  </div>
+
+                  <h4 className="text-2xl font-black text-gray-900">
+                    Visit Our Office
+                  </h4>
                 </div>
-                <h4 className="text-2xl font-black text-gray-900">Visit Our Office</h4>
+
+                <p className="text-gray-600 text-lg leading-relaxed pl-20">
+                  Building No 135, Zone 91, Street No 3087
+                  <br />
+                  <span className="font-bold text-gray-900">
+                    Birkat Al Awamer, Qatar
+                  </span>
+                </p>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed pl-20">
-                Building No 135, Zone 91, Street No 3087
-                <br />
-                <span className="font-bold text-gray-900">Birkat Al Awamer, Qatar</span>
-              </p>
-            </div>
+            </a>
 
             <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
                 <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
                   <Mail size={28} />
                 </div>
-                <h4 className="text-2xl font-black text-gray-900">Send an Email</h4>
+                <h4 className="text-2xl font-black text-gray-900">
+                  Send an Email
+                </h4>
               </div>
               <div className="pl-20 space-y-1">
                 <p className="text-gray-600 text-lg">contact@fizan.com</p>
@@ -57,7 +90,9 @@ export default function Contact() {
                 <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
                   <Phone size={28} />
                 </div>
-                <h4 className="text-2xl font-black text-gray-900">Call Support</h4>
+                <h4 className="text-2xl font-black text-gray-900">
+                  Call Support
+                </h4>
               </div>
               <div className="pl-20 space-y-1">
                 <p className="text-gray-600 text-lg">+1 (555) 000-0000</p>
@@ -73,7 +108,10 @@ export default function Contact() {
 
             <div className="relative z-10">
               <h3 className="text-3xl font-black text-brand-black mb-10">
-                Send a <span className="font-serif italic text-brand-primary">Message</span>
+                Send a{" "}
+                <span className="font-serif italic text-brand-primary">
+                  Message
+                </span>
               </h3>
 
               <form className="space-y-8">
