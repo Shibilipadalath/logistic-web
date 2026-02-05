@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Reveal, FadeIn } from "./Reveal";
 
@@ -33,6 +33,7 @@ const services = [
 
 export default function Services() {
   const [startIndex, setStartIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const itemsPerPage = 2;
 
   const nextSlide = () => {
@@ -49,11 +50,26 @@ export default function Services() {
     );
   };
 
+  // Auto-slide effect
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [startIndex, isPaused]);
+
   // Get current items to display
   const currentServices = services.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <section className="py-20 bg-white text-black">
+    <section
+      className="py-20 bg-white text-black"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
