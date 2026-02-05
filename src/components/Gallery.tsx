@@ -43,7 +43,7 @@ export default function Gallery() {
           {images.map((img, index) => (
             <div
               key={index}
-              className="group relative h-[450px] w-full overflow-hidden rounded-[2rem] shadow-xl cursor-pointer bg-brand-black"
+              className="group relative h-[450px] w-full overflow-hidden rounded-xl shadow-xl cursor-pointer bg-brand-black"
             >
               <Image
                 src={img.src}

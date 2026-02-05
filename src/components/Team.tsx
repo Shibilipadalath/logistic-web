@@ -36,7 +36,7 @@ export default function Team() {
           {professionals.map((member, index) => (
             <div
               key={index}
-              className="rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[420px] relative group
+              className="rounded-xl p-10 flex flex-col justify-between min-h-[420px] relative group
            transition-all duration-500 border border-gray-100 shadow-sm
            bg-white text-brand-black
            hover:shadow-[0_30px_60px_-15px_rgba(184,134,11,0.25)]

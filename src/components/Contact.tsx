@@ -39,7 +39,7 @@ export default function Contact() {
               className="block"
             >
               <div
-                className="bg-slate-50 p-10 rounded-[2.5rem] 
+                className="bg-slate-50 p-10 rounded-xl 
                   border border-gray-100 
                   hover:border-brand-primary/30 
                   hover:shadow-xl 
@@ -70,7 +70,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
+            <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
                 <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
                   <Mail size={28} />
@@ -85,7 +85,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
+            <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
                 <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
                   <Phone size={28} />
@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
 
           {/* Right Side: Form */}
-          <div className="bg-white p-12 lg:p-16 rounded-[3rem] border border-gray-100 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] relative overflow-hidden">
+          <div className="bg-white p-12 lg:p-16 rounded-[18px] border border-gray-100 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] relative overflow-hidden">
             {/* Decorative element */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-bl-[5rem]" />
 

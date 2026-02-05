@@ -77,7 +77,7 @@ export default function AllServices() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden hover:border-brand-primary/40 hover:shadow-[0_40px_80px_-20px_rgba(184,134,11,0.2)] transition-all duration-500 flex flex-col h-full relative"
+              className="group bg-white border border-gray-100 rounded-xl overflow-hidden hover:border-brand-primary/40 hover:shadow-[0_40px_80px_-20px_rgba(184,134,11,0.2)] transition-all duration-500 flex flex-col h-full relative"
             >
               {/* Image Container with Zoom effect */}
               <div className="relative w-full h-80 overflow-hidden">

@@ -6,7 +6,7 @@ export default function Vision() {
         <section className="py-24 bg-brand-beige/20">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Left Side: Image */}
-                <div className="relative w-full h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
+                <div className="relative w-full h-[500px] rounded-[18px] overflow-hidden shadow-2xl">
                     <Image
                         src="/service1.png" // Reusing an existing ship image
                         alt="Logistic Ship"
