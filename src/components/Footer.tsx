@@ -187,7 +187,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-center items-center text-sm text-brand-grey">
           <p>
-            © Fizan 2025. Designed by{" "}
+            © Fizan 2026. Designed by{" "}
             <span className="text-brand-secondary">Willowy</span>
           </p>
         </div>

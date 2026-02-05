@@ -6,7 +6,7 @@ export default function RequestQuote() {
   return (
     <section className="py-15 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-brand-primary/5 rounded-[3rem] p-8 md:p-20 text-center border border-brand-primary/10">
+        <div className="bg-brand-primary/5 rounded-xl p-8 md:p-20 text-center border border-brand-primary/10">
           {/* Header */}
           <div className="max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">

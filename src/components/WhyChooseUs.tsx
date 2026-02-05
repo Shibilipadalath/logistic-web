@@ -70,7 +70,7 @@ const features = [
 export default function WhyChooseUs() {
   return (
     <section className="relative py-10 mx-auto max-w-[1400px] px-4 md:px-6">
-      <div className="relative rounded-[3rem] overflow-hidden min-h-[600px] bg-slate-900">
+      <div className="relative rounded-xl overflow-hidden min-h-[600px] bg-slate-900">
         {/* Background Image */}
         <Image
           src="/whychoose.png"

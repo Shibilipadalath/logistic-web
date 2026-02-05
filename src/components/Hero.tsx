@@ -47,7 +47,7 @@ export default function Hero() {
 
       {/* Image Section */}
       <FadeIn delay={0.3} className="w-full">
-        <div className="relative w-full aspect-[16/10] md:aspect-[2.3/1] rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-2xl ring-1 ring-gray-900/5 group">
+        <div className="relative w-full aspect-[16/10] md:aspect-[2.3/1] rounded-[20px] overflow-hidden shadow-2xl ring-1 ring-gray-900/5 group">
           <Image
             src="/image.png"
             alt="Container Ship Logistics"

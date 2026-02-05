@@ -38,7 +38,7 @@ export default function ExportDestinations() {
         {/* Map Container */}
         <div
           id="track-map"
-          className="relative w-full aspect-[16/9] md:aspect-[2.2/1] bg-slate-50 rounded-[3rem] border border-gray-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] overflow-hidden"
+          className="relative w-full aspect-[16/9] md:aspect-[2.2/1] bg-slate-50 rounded-xl border border-gray-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] overflow-hidden"
         >
           <Map />
         </div>
