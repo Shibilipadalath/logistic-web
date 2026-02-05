@@ -29,7 +29,7 @@ export default function About() {
         <div className="space-y-12 mt-16">
           {/* Headline */}
           <Reveal delay={0.2}>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.2] tracking-tight text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.3] tracking-tight text-gray-900">
               At <span className="text-brand-primary font-serif italic">Fizan</span>, We
               combine <span className="relative inline-block">logistics expertise<span className="absolute bottom-1 left-0 w-full h-3 bg-brand-primary/10 -z-10"></span></span>{" "}
               and digital innovation to deliver cargo with speed, confidence, and

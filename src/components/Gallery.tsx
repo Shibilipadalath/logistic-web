@@ -24,7 +24,7 @@ export default function Gallery() {
     <section className="py-17 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-24 text-center max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-black leading-[1.2] tracking-tighter mb-10">
             A Glimpse Into <br />
             <span className="font-serif italic text-brand-primary lowercase normal-case">Our Operations</span>
           </h2>

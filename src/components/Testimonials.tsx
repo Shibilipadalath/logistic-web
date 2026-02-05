@@ -13,7 +13,7 @@ export default function Testimonials() {
             <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
               {"// Testimonials //"}
             </span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tighter uppercase leading-none">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tighter uppercase leading-none">
               What Our <br />
               <span className="font-serif italic text-brand-primary lowercase normal-case">Clients Say</span>
             </h2>

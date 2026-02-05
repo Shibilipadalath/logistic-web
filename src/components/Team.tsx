@@ -57,7 +57,7 @@ export default function Team() {
                 <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70 text-center">
                   {member.role}
                 </span>
-                <h3 className="text-2xl font-black mb-4 group-hover:text-brand-primary transition-colors text-center">
+                <h3 className="text-xl font-extrabold mb-4 group-hover:text-brand-primary transition-colors text-center">
                   {member.name}
                 </h3>
                 <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors text-justify">

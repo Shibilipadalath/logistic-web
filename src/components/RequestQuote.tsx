@@ -9,7 +9,7 @@ export default function RequestQuote() {
         <div className="bg-brand-primary/5 rounded-xl p-8 md:p-20 text-center border border-brand-primary/10">
           {/* Header */}
           <div className="max-w-3xl mx-auto mb-12">
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">
               Request a <span className="font-serif italic text-brand-primary">Free Quote</span>
             </h2>
             <p className="text-lg text-gray-500 leading-relaxed">

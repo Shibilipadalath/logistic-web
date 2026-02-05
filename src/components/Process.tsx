@@ -78,7 +78,7 @@ export default function Process() {
             <span className="text-[#B8860B] font-bold tracking-widest uppercase text-sm mb-3 block">
               {"// How It Works //"}
             </span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tighter">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter">
               Simplified logistics in <br />
               <span className="font-serif italic text-brand-primary lowercase normal-case">three easy steps.</span>
             </h2>

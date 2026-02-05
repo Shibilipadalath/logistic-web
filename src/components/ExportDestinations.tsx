@@ -25,7 +25,7 @@ export default function ExportDestinations() {
           <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
             {"// Global Network //"}
           </span>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tighter mb-8 leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tighter mb-8 leading-[1.1]">
             Connecting Your <br />
             <span className="font-serif italic text-brand-primary">Business to the World</span>
           </h2>
