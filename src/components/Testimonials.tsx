@@ -13,8 +13,9 @@ export default function Testimonials() {
             <span className="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3 block">
               {"// Testimonials //"}
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight uppercase">
-              What Our Clients Say
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tighter uppercase leading-none">
+              What Our <br />
+              <span className="font-serif italic text-brand-primary lowercase normal-case">Clients Say</span>
             </h2>
           </div>
 

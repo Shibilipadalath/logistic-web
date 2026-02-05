@@ -36,7 +36,7 @@ export default function PageBanner({
                         {subtitle}
                     </span>
                 )}
-                <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
+                <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
                     {title}
                 </h1>
                 {/* Decorative Line */}

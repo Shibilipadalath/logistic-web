@@ -86,8 +86,8 @@ export default function WhyChooseUs() {
               <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase block mb-4">
                 {"// Why Choose Us //"}
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight">
-                WHY BUSINESSES CHOOSE US FOR THEIR LOGISTICS & SHIPPING
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tighter">
+                WHY BUSINESSES <span className="text-brand-primary">CHOOSE US</span> FOR THEIR LOGISTICS
               </h2>
             </div>
 

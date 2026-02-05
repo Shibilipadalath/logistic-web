@@ -25,8 +25,9 @@ export default function ExportDestinations() {
           <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
             {"// Global Network //"}
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
-            Connecting Your Business to the World
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tighter mb-8 leading-[1.1]">
+            Connecting Your <br />
+            <span className="font-serif italic text-brand-primary">Business to the World</span>
           </h2>
           <p className="text-lg text-gray-500">
             Our expansive logistics network covers over 30 countries, ensuring

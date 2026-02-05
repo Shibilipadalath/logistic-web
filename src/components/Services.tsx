@@ -64,8 +64,9 @@ export default function Services() {
               </span>
             </Reveal>
             <Reveal delay={0.2}>
-              <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-black">
-                Explore Our Services
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-gray-900 leading-none">
+                Explore Our <br />
+                <span className="font-serif italic text-brand-primary lowercase normal-case">Services</span>
               </h2>
             </Reveal>
           </div>

@@ -17,9 +17,8 @@ export default function Vision() {
 
                 {/* Right Side: Text */}
                 <div>
-                    <h2 className="text-4xl md:text-5xl md:leading-[1.15] font-semibold text-[#3d2b1f] mb-8">
-                        Revolutionizing supply chains with accuracy, our logistics company
-                        provides flawless solutions, enhancing dependability
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1.1] tracking-tighter">
+                        Revolutionizing <span className="text-brand-primary">supply chains</span> with accuracy and flawless solutions.
                     </h2>
                 </div>
             </div>

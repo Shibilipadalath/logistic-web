@@ -49,8 +49,8 @@ export default function Partners() {
 
                 <div className="flex items-center gap-2 mb-8">
                     <div className="w-1.5 h-1.5 bg-black rounded-full" />
-                    <h3 className="text-sm font-medium text-gray-900">
-                        Working with brands that matter
+                    <h3 className="text-sm font-bold text-gray-900 uppercase tracking-[0.2em]">
+                        Working with <span className="text-brand-primary">brands that matter</span>
                     </h3>
                 </div>
 
