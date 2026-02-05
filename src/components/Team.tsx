@@ -36,32 +36,40 @@ export default function Team() {
           {professionals.map((member, index) => (
             <div
               key={index}
-              className="rounded-[2rem] p-8 flex flex-col justify-between min-h-[360px] relative group
-           transition-all duration-300
-           bg-brand-beige/20 text-brand-black
-           hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#8B5E00]
-           hover:text-white hover:-translate-y-2 cursor-pointer"
+              className="rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[420px] relative group
+           transition-all duration-500 border border-gray-100 shadow-sm
+           bg-white text-brand-black
+           hover:shadow-[0_30px_60px_-15px_rgba(184,134,11,0.25)]
+           hover:-translate-y-3 cursor-pointer overflow-hidden"
             >
+              {/* Background Glow */}
+              <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all duration-500" />
+
               {/* Top Row: Icon & Arrow */}
-              <div className="flex justify-between items-start mb-8">
-                <ArrowUpRight
-                  className="transition-transform duration-300 group-hover:rotate-45 group-hover:text-white text-gray-700"
-                  size={24}
-                />
+              <div className="flex justify-between items-start mb-8 relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+                  <ArrowUpRight
+                    className="transition-transform duration-500 group-hover:rotate-45"
+                    size={28}
+                  />
+                </div>
               </div>
 
               {/* Bottom Row: Info */}
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-center ">
+              <div className="relative z-10">
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70">
+                  {member.role}
+                </span>
+                <h3 className="text-3xl font-black mb-4 group-hover:text-brand-primary transition-colors">
                   {member.name}
                 </h3>
-                <p className="text-sm font-medium mb-4 text-center text-grey">
-                  {member.role}
-                </p>
-                <p className="text-base leading-relaxed text-justify">
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
                   {member.description}
                 </p>
               </div>
+
+              {/* Decorative Progress Line */}
+              <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-brand-primary group-hover:w-full transition-all duration-700" />
             </div>
           ))}
         </div>

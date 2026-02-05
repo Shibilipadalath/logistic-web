@@ -51,10 +51,19 @@ export default function AllServices() {
   return (
     <section className="py-17 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+        <div className="mb-24 text-center max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10 uppercase">
+            Full Spectrum <br />
+            <span className="font-serif italic text-brand-primary lowercase normal-case">Logistics Excellence</span>
+          </h2>
+          <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
+            <span className="h-px w-12 bg-current"></span>
+            <span className="w-2 h-2 rounded-full bg-brand-primary"></span>
+            <span className="h-px w-12 bg-current"></span>
+          </div>
+          <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
             We provide a full range of shipping, transportation, and warehousing
-            services customized to your business needs.
+            services <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20">customized to your business needs</span>, ensuring your supply chain never stops.
           </p>
         </div>
 
@@ -62,31 +71,46 @@ export default function AllServices() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group bg-slate-50 border border-gray-100 rounded-xl overflow-hidden hover:bg-white hover:border-brand-primary/30 hover:shadow-[0_20px_40px_-12px_rgba(184,134,11,0.15)] transition-all duration-300 flex flex-col h-full"
+              className="group bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden hover:border-brand-primary/40 hover:shadow-[0_40px_80px_-20px_rgba(184,134,11,0.2)] transition-all duration-500 flex flex-col h-full relative"
             >
-              {/* Image */}
-              <div className="relative w-full h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+              {/* Image Container with Zoom effect */}
+              <div className="relative w-full h-80 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20" />
+                <div className="absolute inset-0 bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
+
+                {/* Floating Icon on hover */}
+                <div className="absolute top-6 right-6 z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                  <div className="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white shadow-lg shadow-brand-primary/40">
+                    <ArrowUpRight size={24} />
+                  </div>
+                </div>
               </div>
 
-              {/* Content */}
-              <div className="p-8 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-brand-black group-hover:text-brand-primary transition-colors">
+              {/* Content Section */}
+              <div className="p-10 flex flex-col flex-grow relative z-10">
+                <div className="mb-4">
+                  <span className="text-xs font-bold tracking-widest text-brand-primary uppercase mb-2 block opacity-70">
+                    Service {service.id.toString().padStart(2, '0')}
+                  </span>
+                  <h3 className="text-3xl font-black text-brand-black transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <ArrowUpRight className="text-brand-grey group-hover:text-brand-primary transition-colors group-hover:rotate-45 duration-300" />
                 </div>
-                <p className="text-brand-grey leading-relaxed mb-6 flex-grow">
+                <p className="text-gray-600 leading-relaxed text-lg flex-grow">
                   {service.description}
                 </p>
-                <div className="mt-auto"></div>
+
+                {/* Bottom decorative bar */}
+                <div className="mt-8 pt-6 border-t border-gray-50 flex items-center text-brand-primary font-bold text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  Learn More
+                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </div>
               </div>
             </div>
           ))}

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 const images = [
   { src: "/service4.png", alt: "Logistics Fleet", title: "Logistics Fleet" },
@@ -22,10 +23,19 @@ export default function Gallery() {
   return (
     <section className="py-17 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            A glimpse into our world of logistics, operations, and the dedicated
-            team behind every successful delivery.
+        <div className="mb-24 text-center max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10">
+            A Glimpse Into <br />
+            <span className="font-serif italic text-brand-primary lowercase normal-case">Our Operations</span>
+          </h2>
+          <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
+            <span className="h-px w-12 bg-current"></span>
+            <span className="w-2 h-2 rounded-full bg-brand-primary"></span>
+            <span className="h-px w-12 bg-current"></span>
+          </div>
+          <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
+            Explore our world of logistics, from high-scale warehousing to the
+            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20"> dedicated team</span> behind every successful delivery across the globe.
           </p>
         </div>
 
@@ -33,29 +43,35 @@ export default function Gallery() {
           {images.map((img, index) => (
             <div
               key={index}
-              className="group relative h-[400px] w-full overflow-hidden rounded-xl shadow-lg cursor-pointer"
+              className="group relative h-[450px] w-full overflow-hidden rounded-[2rem] shadow-xl cursor-pointer bg-brand-black"
             >
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100"
               />
-              {/* Dark overlay */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all duration-300" />
 
-              {/* Blurred banner with title */}
-              <div
-                className="
-  absolute bottom-4 left-4 right-4
-  opacity-45 group-hover:opacity-100
-  transition-all duration-300
-"
-              >
-                <div className="bg-black/50 backdrop-blur-md px-6 py-3 rounded-lg">
-                  <p className="text-white text-lg font-semibold">
-                    {img.title}
-                  </p>
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+
+              {/* Decorative Corner Element */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-primary/20 backdrop-blur-md transition-all duration-500 rounded-bl-[3rem] -translate-y-full translate-x-full group-hover:translate-x-0 group-hover:translate-y-0 flex items-center justify-center">
+                <ArrowUpRight className="text-white" size={32} />
+              </div>
+
+              {/* Content box */}
+              <div className="absolute bottom-8 left-8 right-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="space-y-2">
+                  <span className="text-xs font-bold tracking-[0.3em] uppercase text-brand-primary block opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                    Portfolio Case
+                  </span>
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">
+                      {img.title}
+                    </h3>
+                  </div>
+                  <div className="w-12 h-1 bg-brand-primary rounded-full transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 delay-200" />
                 </div>
               </div>
             </div>
