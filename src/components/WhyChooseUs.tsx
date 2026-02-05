@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
           {/* Left Side */}
           <div className="space-y-8 h-full flex flex-col justify-between">
             <div>
-              <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase block mb-4">
+              <span className="text-sm font-bold tracking-widest text-white/70 uppercase block mb-4">
                 {"// Why Choose Us //"}
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">

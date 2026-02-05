@@ -36,7 +36,7 @@ export default function Team() {
           {professionals.map((member, index) => (
             <div
               key={index}
-              className="rounded-xl p-8 flex flex-col justify-between min-h-[380px] relative group
+              className="rounded-xl p-8 pt-6 flex flex-col min-h-[360px] relative group
            transition-all duration-500 border border-gray-100 shadow-sm
            bg-white text-brand-black
            hover:shadow-[0_30px_60px_-15px_rgba(184,134,11,0.25)]
@@ -45,19 +45,19 @@ export default function Team() {
               {/* Background Glow */}
               <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all duration-500" />
 
-              {/* Top Row: Icon container (empty for now or add decorative dot) */}
-              <div className="flex justify-between items-start mb-4 relative z-10">
-                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
-                  <div className="w-2 h-2 rounded-full bg-current" />
+              {/* Top Row: Icon container */}
+              <div className="mb-6 relative z-10">
+                <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+                  <div className="w-1.5 h-1.5 rounded-full bg-current" />
                 </div>
               </div>
 
-              {/* Bottom Row: Info */}
-              <div className="relative z-10">
-                <span className="text-xs font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70 text-center">
+              {/* Info Section */}
+              <div className="relative z-10 flex flex-col flex-grow">
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70 text-center">
                   {member.role}
                 </span>
-                <h3 className="text-3xl font-black mb-4 group-hover:text-brand-primary transition-colors text-center">
+                <h3 className="text-2xl font-black mb-4 group-hover:text-brand-primary transition-colors text-center">
                   {member.name}
                 </h3>
                 <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors text-justify">
