@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
                   {feature.icon}
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900">
                     {feature.title}
                   </h3>
                   <p className="text-gray-500 leading-relaxed font-medium">

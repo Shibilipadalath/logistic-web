@@ -97,7 +97,7 @@ export default function AllServices() {
                   <span className="text-xs font-bold tracking-widest text-brand-primary uppercase mb-2 block opacity-70">
                     Service {service.id.toString().padStart(2, "0")}
                   </span>
-                  <h3 className="text-3xl font-black text-brand-black transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-brand-black transition-colors duration-300">
                     {service.title}
                   </h3>
                 </div>

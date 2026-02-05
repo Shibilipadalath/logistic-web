@@ -62,7 +62,7 @@ export default function Gallery() {
                     Portfolio Case
                   </span>
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                    <h3 className="text-lg md:text-xl font-semibold text-white tracking-tight">
                       {img.title}
                     </h3>
                   </div>

@@ -110,7 +110,7 @@ export default function Process() {
               </span>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
+              <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
               <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                 {step.description}
               </p>

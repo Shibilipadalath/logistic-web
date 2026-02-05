@@ -142,7 +142,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className="flex items-start justify-between border-t border-transparent pt-2 mt-auto">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#B8860B] transition-colors">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:text-[#B8860B] transition-colors">
                     {service.title}
                   </h3>
                   <span className="text-gray-400 text-sm md:text-base font-medium whitespace-nowrap ml-4">
