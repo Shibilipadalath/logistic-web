@@ -36,7 +36,7 @@ export default function Team() {
           {professionals.map((member, index) => (
             <div
               key={index}
-              className="rounded-xl p-10 flex flex-col justify-between min-h-[420px] relative group
+              className="rounded-xl p-8 flex flex-col justify-between min-h-[380px] relative group
            transition-all duration-500 border border-gray-100 shadow-sm
            bg-white text-brand-black
            hover:shadow-[0_30px_60px_-15px_rgba(184,134,11,0.25)]
@@ -46,8 +46,8 @@ export default function Team() {
               <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all duration-500" />
 
               {/* Top Row: Icon container (empty for now or add decorative dot) */}
-              <div className="flex justify-between items-start mb-8 relative z-10">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+              <div className="flex justify-between items-start mb-4 relative z-10">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
                   <div className="w-2 h-2 rounded-full bg-current" />
                 </div>
               </div>

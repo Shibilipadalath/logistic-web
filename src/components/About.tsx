@@ -26,7 +26,7 @@ export default function About() {
         </div>
 
         {/* Right Side: Content */}
-        <div className="space-y-12 mt-8">
+        <div className="space-y-12 mt-16">
           {/* Headline */}
           <Reveal delay={0.2}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.2] tracking-tight text-gray-900">

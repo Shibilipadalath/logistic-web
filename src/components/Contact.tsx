@@ -102,84 +102,84 @@ export default function Contact() {
           </div>
 
           {/* Right Side: Form */}
-          <div className="bg-white p-12 lg:p-16 rounded-[18px] border border-gray-100 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] relative overflow-hidden">
+          <div className="bg-white p-8 lg:p-10 rounded-[18px] border border-gray-100 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] relative overflow-hidden">
             {/* Decorative element */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-bl-[5rem]" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-brand-primary/5 rounded-bl-[4rem]" />
 
             <div className="relative z-10">
-              <h3 className="text-3xl font-black text-brand-black mb-10">
+              <h3 className="text-2xl font-black text-brand-black mb-8">
                 Send a{" "}
                 <span className="font-serif italic text-brand-primary">
                   Message
                 </span>
               </h3>
 
-              <form className="space-y-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-3">
-                    <label className="text-xs font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
                       Full Name
                     </label>
                     <input
                       type="text"
                       placeholder="John Doe"
-                      className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-lg"
+                      className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-base"
                     />
                   </div>
-                  <div className="space-y-3">
-                    <label className="text-xs font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
                       Email Address
                     </label>
                     <input
                       type="email"
                       placeholder="john@example.com"
-                      className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-lg"
+                      className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-base"
                     />
                   </div>
                 </div>
 
-                <div className="space-y-3">
-                  <label className="text-xs font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
                     Phone Number
                   </label>
                   <input
                     type="tel"
                     placeholder="+1 (555) 000-0000"
-                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-lg"
+                    className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-base"
                   />
                 </div>
 
-                <div className="space-y-3">
-                  <label className="text-xs font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
                     Subject
                   </label>
                   <div className="relative">
-                    <select className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-gray-100 text-gray-900 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-lg appearance-none">
+                    <select className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-gray-100 text-gray-900 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-base appearance-none">
                       <option>General Inquiry</option>
                       <option>Request a Quote</option>
                       <option>Track Shipment</option>
                       <option>Careers</option>
                     </select>
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-brand-primary">
-                      <ArrowUpRight size={20} className="rotate-45" />
+                    <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-brand-primary">
+                      <ArrowUpRight size={18} className="rotate-45" />
                     </div>
                   </div>
                 </div>
 
-                <div className="space-y-3">
-                  <label className="text-xs font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] ml-1">
                     Message
                   </label>
                   <textarea
-                    rows={5}
+                    rows={4}
                     placeholder="How can we help you?"
-                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-lg resize-none"
+                    className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-gray-100 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-primary/50 focus:ring-4 focus:ring-brand-primary/5 transition-all text-base resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white font-black py-5 rounded-2xl hover:shadow-[0_20px_40px_-10px_rgba(184,134,11,0.4)] transition-all duration-500 text-lg uppercase tracking-widest active:scale-95"
+                  className="w-full bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white font-black py-4 rounded-xl hover:shadow-[0_20px_40px_-10px_rgba(184,134,11,0.4)] transition-all duration-500 text-base uppercase tracking-widest active:scale-95"
                 >
                   Send Message
                 </button>
