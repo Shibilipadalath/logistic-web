@@ -6,9 +6,9 @@ export default function AboutMain() {
     <section className="py-20 bg-white text-brand-black">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="mb-24 text-center max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tighter mb-10">
+          <h2 className="text-4xl md:text-6xl font-black text-brand-black leading-[1.1] tracking-tight mb-10">
             Committed to creating <br />
-            <span className="font-serif italic text-brand-primary">reliable & seamless</span> logistics solutions.
+            <span className="font-serif italic text-brand-primary">reliable & seamless </span> logistics solutions.
           </h2>
           <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
             <span className="h-px w-12 bg-current"></span>

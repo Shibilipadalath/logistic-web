@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -86,30 +87,18 @@ export default function WhyChooseUs() {
               <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase block mb-4">
                 {"// Why Choose Us //"}
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tighter">
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
                 WHY BUSINESSES <span className="text-brand-primary">CHOOSE US</span> FOR THEIR LOGISTICS
               </h2>
             </div>
 
             <div className="flex items-center gap-4 pt-8">
-              <button className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-8 py-3.5 rounded-full font-bold hover:bg-brand-secondary transition-colors">
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-8 py-3.5 rounded-full font-bold hover:bg-brand-secondary transition-colors"
+              >
                 Get a Quote
-              </button>
-              <button className="w-12 h-12 bg-white text-[#B8860B] rounded-full flex items-center justify-center hover:scale-105 transition-transform hover:bg-[#B8860B] hover:text-white">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </button>
+              </Link>
             </div>
           </div>
 

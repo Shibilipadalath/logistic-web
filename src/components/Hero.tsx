@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Headlines */}
       <Reveal delay={0.1}>
         <div className="space-y-4 mb-8">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-brand-black tracking-tight leading-[1.1]">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-brand-black tracking-normal leading-[1.1]">
             Seamless Logistics, <br />
             <span className="font-serif italic text-brand-primary">
               Faster Deliveries

@@ -45,13 +45,10 @@ export default function Team() {
               {/* Background Glow */}
               <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all duration-500" />
 
-              {/* Top Row: Icon & Arrow */}
+              {/* Top Row: Icon container (empty for now or add decorative dot) */}
               <div className="flex justify-between items-start mb-8 relative z-10">
                 <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
-                  <ArrowUpRight
-                    className="transition-transform duration-500 group-hover:rotate-45"
-                    size={28}
-                  />
+                  <div className="w-2 h-2 rounded-full bg-current" />
                 </div>
               </div>
 

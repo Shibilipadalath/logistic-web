@@ -17,7 +17,7 @@ export default function Vision() {
 
                 {/* Right Side: Text */}
                 <div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1.1] tracking-tighter">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1.1] tracking-tight">
                         Revolutionizing <span className="text-brand-primary">supply chains</span> with accuracy and flawless solutions.
                     </h2>
                 </div>

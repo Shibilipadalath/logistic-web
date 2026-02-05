@@ -55,11 +55,6 @@ export default function Gallery() {
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
-              {/* Decorative Corner Element */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-primary/20 backdrop-blur-md transition-all duration-500 rounded-bl-[3rem] -translate-y-full translate-x-full group-hover:translate-x-0 group-hover:translate-y-0 flex items-center justify-center">
-                <ArrowUpRight className="text-white" size={32} />
-              </div>
-
               {/* Content box */}
               <div className="absolute bottom-8 left-8 right-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="space-y-2">
@@ -67,7 +62,7 @@ export default function Gallery() {
                     Portfolio Case
                   </span>
                   <div className="flex items-center justify-between">
-                    <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">
+                    <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight">
                       {img.title}
                     </h3>
                   </div>

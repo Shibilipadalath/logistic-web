@@ -89,13 +89,6 @@ export default function AllServices() {
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-
-                {/* Floating Icon on hover */}
-                <div className="absolute top-6 right-6 z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                  <div className="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white shadow-lg shadow-brand-primary/40">
-                    <ArrowUpRight size={24} />
-                  </div>
-                </div>
               </div>
 
               {/* Content Section */}
