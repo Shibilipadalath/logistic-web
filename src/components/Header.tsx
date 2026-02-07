@@ -20,18 +20,17 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 py-2">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg rounded-full mt-2 relative">
+    <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg rounded-full mt-2 relative">
         {/* Logo */}
-        <Link href="/" className="flex items-center group ml-4">
-          <div className="relative w-48 h-12">
-            <Image
-              src="/main_logo.jpeg"
-              alt="Fizan International Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
+        <Link href="/" className="flex items-center ml-3 mt-[24px]">
+          <Image
+            src="/logoss.png"
+            alt="Fizan International Logo"
+            width={150}
+            height={50}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -42,10 +41,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  isActive
                     ? "bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white shadow-md"
                     : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
-                  }`}
+                }`}
               >
                 {item.name}
               </Link>
@@ -75,10 +75,11 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${isActive
+                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${
+                  isActive
                     ? "bg-[#B8860B]/10 text-[#B8860B]"
                     : "text-brand-grey hover:text-brand-black hover:bg-gray-50"
-                  }`}
+                }`}
               >
                 {item.name}
               </Link>

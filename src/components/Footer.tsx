@@ -18,11 +18,12 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center mb-6">
               {/* Logo Icon */}
-              <div className="w-40 h-10 relative">
+              <div className="w-70 h-20 relative">
                 <Image
-                  src="/main_logo.jpeg"
+                  src="/logoss.png"
                   alt="Fizan Logo"
-                  fill
+                  width={160}
+                  height={60}
                   className="object-contain"
                 />
               </div>
