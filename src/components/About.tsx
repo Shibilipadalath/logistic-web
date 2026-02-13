@@ -30,10 +30,9 @@ export default function About() {
           {/* Headline */}
           <Reveal delay={0.2}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.3] tracking-tight text-gray-900">
-              At <span className="text-brand-primary font-serif italic">Fizan</span>, We
-              combine <span className="relative inline-block">logistics expertise<span className="absolute bottom-1 left-0 w-full h-3 bg-brand-primary/10 -z-10"></span></span>{" "}
-              and digital innovation to deliver cargo with speed, confidence, and
-              impact worldwide.
+              At <span className="text-brand-primary font-serif italic">Fizan</span>, we
+              combine <span className="relative inline-block">nature's best<span className="absolute bottom-1 left-0 w-full h-3 bg-brand-primary/10 -z-10"></span></span>{" "}
+              with strict quality control to deliver freshness, safety, and excellence worldwide.
             </h2>
           </Reveal>
 
@@ -42,24 +41,20 @@ export default function About() {
             <div className="h-px w-full bg-gray-200" />
           </Reveal>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          {/* Features List */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
             {[
-              { number: "15+", label: "Years", sub: "of shipping expertise" },
-              { number: "30+", label: "Countries", sub: "covered" },
-              { number: "60K+", label: "TN", sub: "Cargo handled worldwide" }
-            ].map((stat, i) => (
+              "Strict quality control procedures",
+              "Hygienic processing and packaging",
+              "Timely delivery and efficient logistics",
+              "Compliance with international export standards"
+            ].map((feature, i) => (
               <Reveal key={i} delay={0.4 + (i * 0.1)}>
-                <div className="space-y-2">
-                  <h3 className="text-4xl font-bold flex items-baseline gap-1 text-center text-[#B8860B]">
-                    {stat.number}{" "}
-                    <span className="text-2xl text-brand-grey font-medium font-semibold -top-1">
-                      {stat.label}
-                    </span>
-                  </h3>
-                  <p className="text-brand-grey text-m font-medium text-center md:text-left">
-                    {stat.sub}
-                  </p>
+                <div className="flex items-start gap-3 group">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#B8860B] mt-2.5 group-hover:scale-150 transition-transform duration-300" />
+                  <span className="text-lg font-medium text-gray-800 group-hover:text-[#B8860B] transition-colors">
+                    {feature}
+                  </span>
                 </div>
               </Reveal>
             ))}

@@ -23,15 +23,14 @@ export default function ExportDestinations() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
-            {"// Global Network //"}
+            {"// Our Markets //"}
           </span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tighter mb-8 leading-[1.1]">
-            Connecting Your <br />
-            <span className="font-serif italic text-brand-primary">Business to the World</span>
+            Global <br />
+            <span className="font-serif italic text-brand-primary">Reach</span>
           </h2>
           <p className="text-lg text-gray-500">
-            Our expansive logistics network covers over 30 countries, ensuring
-            your cargo reaches its destination safely and on time.
+            Fizan International Pvt. Ltd. proudly exports to markets across Europe and the Middle East, maintaining strict compliance with international standards.
           </p>
         </div>
 
@@ -46,14 +45,14 @@ export default function ExportDestinations() {
         {/* Categories */}
         <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-12 opacity-80">
           {[
+            "Europe",
+            "Middle East",
+            "International Standards",
             "Global Shipping",
-            "Warehousing",
-            "Customs Brokerage",
-            "Supply Chain Management",
           ].map((tag) => (
             <div key={tag} className="flex items-center gap-2">
               <div className="w-2 h-2 bg-[#B8860B] rounded-full" />
-              <span className="text-sm font-bold uppercase tracking-wider text-gray-500">
+              <span className="text-lg font-bold uppercase tracking-wider text-gray-500">
                 {tag}
               </span>
             </div>

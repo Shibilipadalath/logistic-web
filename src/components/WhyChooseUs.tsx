@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "Fast & Secure Delivery",
+    title: "Hygienic Handling",
     description:
-      "We prioritize speed and safety, making sure your goods arrive on time and in perfect condition.",
+      "Strict control measures throughout processing to ensure the highest hygiene standards.",
     icon: (
       <svg
         width="24"
@@ -18,17 +18,14 @@ const features = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <rect x="1" y="3" width="15" height="13" />
-        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-        <circle cx="5.5" cy="18.5" r="2.5" />
-        <circle cx="18.5" cy="18.5" r="2.5" />
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
   },
   {
-    title: "Custom Shipping Plans",
+    title: "Temperature-Controlled",
     description:
-      "Every business is different. We tailor logistics strategies that fit your timeline, budget, and requirements.",
+      "Advanced storage solutions to maintain optimal temperature and product freshness.",
     icon: (
       <svg
         width="24"
@@ -40,15 +37,14 @@ const features = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
       </svg>
     ),
   },
   {
-    title: "24/7 Tracking & Support",
+    title: "Safe & Compliant",
     description:
-      "Stay informed with real-time shipment tracking and dedicated customer support whenever you need it.",
+      "Secure packaging and full adherence to international export regulations.",
     icon: (
       <svg
         width="24"
@@ -60,8 +56,9 @@ const features = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1="12" y1="22.08" x2="12" y2="12" />
       </svg>
     ),
   },
@@ -85,10 +82,10 @@ export default function WhyChooseUs() {
           <div className="space-y-8 h-full flex flex-col justify-between">
             <div>
               <span className="text-sm font-bold tracking-widest text-white/70 uppercase block mb-4">
-                {"// Why Choose Us //"}
+                {"// Quality Assurance //"}
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
-                WHY BUSINESSES <span className="text-brand-primary">CHOOSE US</span> FOR THEIR LOGISTICS
+                OUR COMMITMENT <span className="text-brand-primary">TO QUALITY</span> ACROSS ALL OPERATIONS
               </h2>
             </div>
 

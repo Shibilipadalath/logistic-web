@@ -9,13 +9,13 @@ export default function Hero() {
       <Reveal delay={0.1}>
         <div className="space-y-4 mb-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-brand-black tracking-tight leading-[1.1]">
-            Seamless Logistics, <br />
+            Delivering Freshness <br />
             <span className="font-serif italic text-brand-primary">
-              Faster Deliveries
+              Worldwide
             </span>
           </h1>
           <p className="text-gray-600 text-lg md:text-2xl max-w-2xl mx-auto font-medium pt-4 leading-relaxed">
-            Streamlined freight management with real-time tracking systems.
+            Connecting nature’s best from farmers directly to global buyers.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function Hero() {
     hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
     hover:-translate-y-1 cursor-pointer flex items-center justify-center text-center"
                 >
-                  Our Services
+                  Our Products
                 </Link>
 
                 <Link

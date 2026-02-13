@@ -30,8 +30,7 @@ export default function Footer() {
             </div>
 
             <p className="text-brand-grey leading-relaxed mb-8 max-w-sm">
-              Get a customized shipping quote tailored to your needs. Fast,
-              transparent, and hassle-free pricing for all logistics solutions.
+              Our mission is to build long-term partnerships by delivering consistent quality and dependable service to our global clients.
             </p>
 
             {/* Social Icons */}
@@ -90,7 +89,7 @@ export default function Footer() {
               {[
                 { name: "Home", href: "/" },
                 { name: "About Us", href: "/about" },
-                { name: "Services", href: "/services" },
+                { name: "Products", href: "/services" },
                 { name: "Gallery", href: "/gallery" },
                 { name: "Contact", href: "/contact" },
               ].map((item) => (
@@ -106,17 +105,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Courier Types */}
+          {/* Product Types */}
           <div className="lg:col-span-2">
-            <h4 className="text-lg font-semibold mb-6">Courier Types</h4>
+            <h4 className="text-lg font-semibold mb-6">Our Products</h4>
             <ul className="space-y-4">
               {[
-                "Standard",
-                "Express",
-                "International",
-                "Ware Housing",
-                "Overnight",
-                "Pallet",
+                "Frozen Fish",
+                "Fresh Vegetables",
+                "Export Quality",
+                "Farm Fresh",
+                "Strict QC",
+                "Global Shipping",
               ].map((item) => (
                 <li key={item}>
                   <a
