@@ -75,8 +75,7 @@ export default function Testimonials() {
           {/* Right Column: Testimonial Content */}
           <div className="lg:col-span-8 flex flex-col justify-center">
             <blockquote className="text-3xl md:text-5xl font-medium text-gray-900 leading-tight tracking-tight mb-12">
-              &quot;Working with Boulevard felt less like building with a
-              creative partner. Every visual, every word—just hit right.&quot;
+              &quot;Working with Fizan International has been exceptional. Their commitment to freshness and timely delivery significantly improved our supply chain.&quot;
             </blockquote>
 
             {/* Author Profile */}

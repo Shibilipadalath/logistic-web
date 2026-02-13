@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Sourcing",
     description:
-      "We locate and procure the highest quality goods from our trusted global network of suppliers.",
+      "Direct collection from trusted farmers and fisheries to ensure premium quality raw materials.",
     icon: (
       <svg
         width="32"
@@ -24,9 +24,9 @@ const steps = [
   },
   {
     number: "02",
-    title: "Packaging",
+    title: "Processing",
     description:
-      "Expert handling and secure packaging ensure your items remain safe throughout their journey.",
+      "Hygienic cleaning, sorting, and advanced freezing (IQF) to preserve freshness and taste.",
     icon: (
       <svg
         width="32"
@@ -46,9 +46,9 @@ const steps = [
   },
   {
     number: "03",
-    title: "Shipping",
+    title: "Delivery",
     description:
-      "Fast and reliable global shipping with real-time tracking updates until final delivery.",
+      "Efficient global shipping with temperature controls to ensure products arrive fresh.",
     icon: (
       <svg
         width="32"
@@ -79,14 +79,13 @@ export default function Process() {
               {"// How It Works //"}
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter">
-              Simplified logistics in <br />
-              <span className="font-serif italic text-brand-primary lowercase normal-case">three easy steps.</span>
+              From Nature to <br />
+              <span className="font-serif italic text-brand-primary lowercase normal-case">Your Doorstep.</span>
             </h2>
           </div>
 
           <p className="text-gray-400 max-w-sm text-lg relative -top-10">
-            From source to destination, we handle every detail with precision
-            and care.
+            We ensure freshness, safety, and excellence in every step of the journey.
           </p>
         </div>
 

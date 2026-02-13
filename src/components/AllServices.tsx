@@ -5,44 +5,44 @@ import { ArrowUpRight } from "lucide-react";
 const services = [
   {
     id: 1,
-    title: "Warehousing & Distribution",
+    title: "Frozen Fish",
     description:
-      "Secure storage and efficient distribution networks to keep your supply chain moving smoothly.",
+      "Premium quality frozen fish collected from trusted fisheries and processed with IQF technology.",
     image: "/service1.png",
   },
   {
     id: 2,
-    title: "International Shipping",
+    title: "Fresh Vegetables",
     description:
-      "Reliable sea and ocean freight services connecting you to global markets.",
+      "Farm-fresh vegetables sourced directly from growers, sorted and graded for export.",
     image: "/service2.png",
   },
   {
     id: 3,
-    title: "Supply Chain Solutions",
+    title: "Cold Chain Logistics",
     description:
-      "End-to-end management and optimization of your logistics flow.",
+      "Temperature-controlled storage and transport ensuring freshness from source to destination.",
     image: "/service3.png",
   },
   {
     id: 4,
-    title: "Cargo Transport",
+    title: "Global Export",
     description:
-      "Ground transportation solutions for domestic and cross-border delivery.",
+      "Seamless export operations to markets in Europe and the Middle East with full compliance.",
     image: "/service4.png",
   },
   {
     id: 5,
-    title: "Air Freight",
+    title: "Custom Packaging",
     description:
-      "Fast and secure air cargo services for your time-sensitive shipments.",
+      "Hygienic and secure packaging solutions tailored to buyer requirements.",
     image: "/express.jpg",
   },
   {
     id: 6,
-    title: "Customs Brokerage",
+    title: "Quality Assurance",
     description:
-      "Simplifying customs regulations to ensure quick clearance of your goods.",
+      " rigorous quality inspections at every stage to meet international food safety standards.",
     image: "/logis.png.jpg",
   },
 ];
@@ -53,9 +53,9 @@ export default function AllServices() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-24 text-center max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-black leading-[1.2] tracking-tighter mb-10 uppercase">
-            Full Spectrum <br />
+            Our Premium <br />
             <span className="font-serif italic text-brand-primary lowercase normal-case">
-              Logistics Excellence
+              Product Range
             </span>
           </h2>
           <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
@@ -64,12 +64,11 @@ export default function AllServices() {
             <span className="h-px w-12 bg-current"></span>
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
-            We provide a full range of shipping, transportation, and warehousing
-            services{" "}
+            We offer a diverse selection of high-quality frozen fish and fresh vegetables,
             <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20">
-              customized to your business needs
+              {" "}processed and delivered{" "}
             </span>
-            , ensuring your supply chain never stops.
+            with strict adherence to global standards.
           </p>
         </div>
 

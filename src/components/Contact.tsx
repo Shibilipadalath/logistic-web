@@ -1,6 +1,23 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock, ArrowUpRight } from "lucide-react";
 
+const ContactAddress = () => (
+  <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 cursor-pointer">
+    <div className="flex items-center gap-6 mb-4">
+      <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
+        <MapPin size={28} />
+      </div>
+      <h4 className="text-2xl font-black text-gray-900">
+        Global Operations
+      </h4>
+    </div>
+    <p className="text-gray-600 text-lg leading-relaxed pl-20">
+      Fizan International Pvt. Ltd.<br />
+      Exporting to Europe & Middle East
+    </p>
+  </div>
+);
+
 export default function Contact() {
   return (
     <section className="py-24 bg-white">
@@ -19,56 +36,19 @@ export default function Contact() {
             <span className="h-px w-12 bg-current"></span>
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
-            Have questions about our logistics services or need a custom quote?
+            Interested in our premium frozen fish or fresh vegetables?
             <span className="text-brand-black font-extrabold border-b border-brand-primary/20">
               {" "}
-              Reach out to our experts
+              Contact our export team
             </span>{" "}
-            and we&apos;ll get back to you shortly.
+            for a custom quote or partnership inquiry.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
           {/* Left Side: Contact Info */}
           <div className="space-y-6">
-            <a
-              href="https://maps.app.goo.gl/kDZNdfaZJRjyXSQ86?g_st=aw"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Open location in Google Maps"
-              className="block"
-            >
-              <div
-                className="bg-slate-50 p-10 rounded-xl 
-                  border border-gray-100 
-                  hover:border-brand-primary/30 
-                  hover:shadow-xl 
-                  transition-all duration-500 
-                  cursor-pointer"
-              >
-                <div className="flex items-center gap-6 mb-4">
-                  <div
-                    className="w-14 h-14 rounded-2xl bg-brand-primary/10 
-                      flex items-center justify-center 
-                      text-brand-primary"
-                  >
-                    <MapPin size={28} />
-                  </div>
-
-                  <h4 className="text-2xl font-black text-gray-900">
-                    Visit Our Office
-                  </h4>
-                </div>
-
-                <p className="text-gray-600 text-lg leading-relaxed pl-20">
-                  Building No 135, Zone 91, Street No 3087
-                  <br />
-                  <span className="font-bold text-gray-900">
-                    Birkat Al Awamer, Qatar
-                  </span>
-                </p>
-              </div>
-            </a>
+            <ContactAddress />
 
             <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
@@ -80,8 +60,8 @@ export default function Contact() {
                 </h4>
               </div>
               <div className="pl-20 space-y-1">
-                <p className="text-gray-600 text-lg">contact@fizan.com</p>
-                <p className="text-gray-600 text-lg">support@fizan.com</p>
+                <p className="text-gray-600 text-lg">info@fizan.com</p>
+                <p className="text-gray-600 text-lg">sales@fizan.com</p>
               </div>
             </div>
 

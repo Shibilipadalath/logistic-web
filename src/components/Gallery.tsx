@@ -3,20 +3,20 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const images = [
-  { src: "/service4.png", alt: "Logistics Fleet", title: "Logistics Fleet" },
+  { src: "/service4.png", alt: "Logistics Fleet", title: "Cold Chain Transport" },
   {
     src: "/service2.png",
     alt: "Warehouse Operations",
-    title: "Warehouse Distribution",
+    title: "Fresh Produce Storage",
   },
-  { src: "/service3.png", alt: "Cargo Handling", title: "Cargo Handling" },
+  { src: "/service3.png", alt: "Cargo Handling", title: "Export Processing" },
   { src: "/service1.png", alt: "Global Shipping", title: "Global Shipping" },
   {
     src: "/logis.png.jpg",
     alt: "Team at Work",
-    title: "International Shipping",
+    title: "Quality Inspection",
   },
-  { src: "/express.jpg", alt: "Express Delivery", title: "Express Delivery" },
+  { src: "/express.jpg", alt: "Express Delivery", title: "Fast Delivery" },
 ];
 
 export default function Gallery() {
@@ -34,8 +34,8 @@ export default function Gallery() {
             <span className="h-px w-12 bg-current"></span>
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
-            Explore our world of logistics, from high-scale warehousing to the
-            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20"> dedicated team</span> behind every successful delivery across the globe.
+            From farm to global markets, see how we ensure
+            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20"> premium quality </span> in every shipment.
           </p>
         </div>
 
