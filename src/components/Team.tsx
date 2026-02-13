@@ -4,26 +4,26 @@ import { User, ArrowUpRight, TrendingUp, ShieldCheck } from "lucide-react";
 const professionals = [
   {
     name: "Our Vision",
-    role: "What Drives Us Forward",
+    role: "Where We Are Going",
     image: "/vision.jpg", // optional: icon or abstract image
     description:
-      "To become a globally trusted logistics partner by delivering innovative, reliable, and customer-centric supply chain solutions that connect businesses worldwide.",
+      "To be the leading global provider of premium fresh produce, setting standards for quality, sustainability, and ethical business practices in the international market.",
     variant: "dark",
   },
   {
     name: "Our Mission",
-    role: "What We Do Every Day",
+    role: "Why We Exist",
     image: "/mission.jpg",
     description:
-      "To provide efficient, secure, and timely logistics services by leveraging technology, expertise, and a strong global network while exceeding customer expectations.",
+      "To build long-term partnerships by delivering consistent quality and dependable service to our global clients.",
     variant: "light",
   },
   {
-    name: "Our Guidelines",
-    role: "How We Work",
+    name: "Our Values",
+    role: "What We Believe In",
     image: "/guidelines.jpg",
     description:
-      "We operate with integrity, transparency, and accountability, prioritizing safety, compliance, sustainability, and continuous improvement in every shipment we handle.",
+      "Quality, Integrity, and Reliability. We connect nature’s best directly from farmers and fisheries to global buyers with unwavering commitment to excellence.",
     variant: "light",
   },
 ];
