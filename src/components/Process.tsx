@@ -80,12 +80,15 @@ export default function Process() {
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter">
               From Nature to <br />
-              <span className="font-serif italic text-brand-primary lowercase normal-case">Your Doorstep.</span>
+              <span className="font-serif italic text-brand-primary lowercase normal-case">
+                Your Doorstep.
+              </span>
             </h2>
           </div>
 
           <p className="text-gray-400 max-w-sm text-lg relative -top-10">
-            We ensure freshness, safety, and excellence in every step of the journey.
+            We ensure freshness, safety, and excellence in every step of the
+            journey.
           </p>
         </div>
 
@@ -104,7 +107,16 @@ export default function Process() {
               </div>
 
               {/* Number */}
-              <span className="text-6xl font-bold text-[#B8860B] absolute top-4 right-50 opacity-75 select-none group-hover:text-[#8B5E00] transition-colors">
+              <span
+                className="
+  text-4xl sm:text-5xl lg:text-6xl
+  font-bold text-[#B8860B]
+  absolute top-5 left-24 sm:left-28
+  opacity-75 select-none
+  group-hover:text-[#8B5E00]
+  transition-colors
+"
+              >
                 {step.number}
               </span>
 
