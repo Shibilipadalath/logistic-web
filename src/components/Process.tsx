@@ -109,13 +109,14 @@ export default function Process() {
               {/* Number */}
               <span
                 className="
-  text-4xl sm:text-5xl lg:text-6xl
-  font-bold text-[#B8860B]
-  absolute top-5 left-24 sm:left-28
-  opacity-75 select-none
-  group-hover:text-[#8B5E00]
-  transition-colors
-"
+    absolute
+    text-3xl sm:text-4xl lg:text-5xl
+    font-bold text-[#B8860B]
+    top-4 left-20 sm:left-24 md:left-28
+    opacity-75 select-none
+    group-hover:text-[#8B5E00]
+    transition-colors
+  "
               >
                 {step.number}
               </span>
