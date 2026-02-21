@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg rounded-full mt-2 relative">
+      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between bg-[#091d25] backdrop-blur-md border border-gray-700 shadow-lg rounded-full mt-2 relative">
         {/* Logo */}
         <Link href="/" className="flex items-center ml-3 mt-[24px]">
           <Image
@@ -41,10 +41,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
-                    ? "bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white shadow-md"
-                    : "text-brand-grey hover:text-brand-black hover:bg-brand-beige/20"
-                  }`}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  isActive
+                    ? "bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white shadow-md"
+                    : "text-brand-grey hover:text-white hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588]"
+                }`}
               >
                 {item.name}
               </Link>
@@ -74,10 +75,11 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${isActive
-                    ? "bg-[#B8860B]/10 text-[#B8860B]"
-                    : "text-brand-grey hover:text-brand-black hover:bg-gray-50"
-                  }`}
+                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${
+                  isActive
+                    ? "bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white"
+                    : "text-brand-grey hover:text-white hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588]"
+                }`}
               >
                 {item.name}
               </Link>

@@ -10,7 +10,10 @@ export default function RequestQuote() {
           {/* Header */}
           <div className="max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">
-              Request a <span className="font-serif italic text-brand-primary">Free Quote</span>
+              Request a{" "}
+              <span className="font-serif italic text-brand-primary">
+                Free Quote
+              </span>
             </h2>
             <p className="text-lg text-gray-500 leading-relaxed">
               Get a customized shipping quote tailored to your needs. Fast,
@@ -61,11 +64,11 @@ export default function RequestQuote() {
               <div className="w-full md:w-auto">
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] 
+                  className="bg-gradient-to-r from-[#5d5b47] to-[#c1b588]
   text-white px-7 py-3 rounded-full text-base font-bold transition-all 
-  shadow-[0_10px_30px_-10px_rgba(184,134,11,0.5)] 
-  hover:from-[#B8860B]  hover:to-[#B8860B]
-  hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
+  shadow-[0_10px_30px_-10px_rgba(93,91,71,0.5)] 
+  hover:opacity-90
+  hover:shadow-[0_20px_40px_-10px_rgba(93,91,71,0.6)] 
   hover:-translate-y-1 cursor-pointer"
                 >
                   Submit Now

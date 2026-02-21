@@ -85,14 +85,16 @@ export default function WhyChooseUs() {
                 {"// Quality Assurance //"}
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
-                OUR COMMITMENT <span className="text-brand-primary">TO QUALITY</span> ACROSS ALL OPERATIONS
+                OUR COMMITMENT{" "}
+                <span className="text-brand-primary">TO QUALITY</span> ACROSS
+                ALL OPERATIONS
               </h2>
             </div>
 
             <div className="flex items-center gap-4 pt-8">
               <Link
                 href="/contact"
-                className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white px-8 py-3.5 rounded-full font-bold hover:bg-brand-secondary transition-colors"
+                className="bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white px-8 py-3.5 rounded-full font-bold hover:shadow-lg transition-all"
               >
                 Get a Quote
               </Link>
@@ -104,9 +106,9 @@ export default function WhyChooseUs() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white rounded-[2rem] p-8 flex items-start gap-6 shadow-lg hover:translate-x-2 transition-transform duration-300 hover:ring-2 hover:ring-brand-secondary border border-transparent"
+                className="bg-white rounded-[2rem] p-8 flex items-start gap-6 shadow-lg hover:translate-x-2 transition-transform duration-300 hover:ring-2 hover:ring-[#c1b588] border border-transparent"
               >
-                <div className="p-3 bg-brand-primary/10 text-[#B8860B] rounded-2xl shrink-0">
+                <div className="p-3 bg-brand-primary/10 text-[#c1b588] rounded-2xl shrink-0">
                   {feature.icon}
                 </div>
                 <div className="space-y-2">

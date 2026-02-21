@@ -80,7 +80,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <div className="space-y-4">
             <Reveal>
-              <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
+              <span className="text-sm font-bold tracking-widest text-[#c1b588] uppercase mb-3 block">
                 {"// Our Products //"}
               </span>
             </Reveal>
@@ -100,7 +100,7 @@ export default function Services() {
                 <div className="flex items-center gap-3">
                   <button
                     onClick={prevSlide}
-                    className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#B8860B] hover:text-white transition-colors cursor-pointer group"
+                    className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#c1b588] hover:text-white transition-colors cursor-pointer group"
                   >
                     <svg
                       width="24"
@@ -139,7 +139,7 @@ export default function Services() {
                 </div>
 
                 {/* Counter */}
-                <span className="text-[#B8860B] font-medium tracking-wide">
+                <span className="text-[#c1b588] font-medium tracking-wide">
                   {`(PRODUCTS ${String(startIndex + 1).padStart(2, "0")}/${String(services.length).padStart(2, "0")})`}
                 </span>
               </div>
@@ -165,7 +165,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className="flex items-start justify-between border-t border-transparent pt-2 mt-auto p-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:text-[#B8860B] transition-colors">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:text-[#c1b588] transition-colors">
                     {service.title}
                   </h3>
                   <span className="text-gray-400 text-sm md:text-base font-medium whitespace-nowrap ml-4">

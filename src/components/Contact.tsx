@@ -7,12 +7,11 @@ const ContactAddress = () => (
       <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
         <MapPin size={28} />
       </div>
-      <h4 className="text-2xl font-black text-gray-900">
-        Global Operations
-      </h4>
+      <h4 className="text-2xl font-black text-gray-900">Global Operations</h4>
     </div>
     <p className="text-gray-600 text-lg leading-relaxed pl-20">
-      Fizan International Pvt. Ltd.<br />
+      Fizan International Pvt. Ltd.
+      <br />
       Exporting to Europe & Middle East
     </p>
   </div>
@@ -52,7 +51,7 @@ export default function Contact() {
 
             <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-gradient-to-r group-hover:from-[#5d5b47] group-hover:to-[#c1b588] group-hover:text-white transition-all duration-500">
                   <Mail size={28} />
                 </div>
                 <h4 className="text-2xl font-black text-gray-900">
@@ -67,7 +66,7 @@ export default function Contact() {
 
             <div className="bg-slate-50 p-10 rounded-xl border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all duration-500 group">
               <div className="flex items-center gap-6 mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-gradient-to-r group-hover:from-[#5d5b47] group-hover:to-[#c1b588] group-hover:text-white transition-all duration-500">
                   <Phone size={28} />
                 </div>
                 <h4 className="text-2xl font-black text-gray-900">
@@ -159,7 +158,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#B8860B] to-[#8B5E00] text-white font-black py-4 rounded-xl hover:shadow-[0_20px_40px_-10px_rgba(184,134,11,0.4)] transition-all duration-500 text-base uppercase tracking-widest active:scale-95"
+                  className="w-full bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white font-black py-4 rounded-xl hover:shadow-[0_20px_40px_-10px_rgba(93,91,71,0.4)] transition-all duration-500 text-base uppercase tracking-widest active:scale-95"
                 >
                   Send Message
                 </button>

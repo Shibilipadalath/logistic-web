@@ -9,12 +9,12 @@ export default function About() {
         {/* Left Side: Label + Graphic */}
         <div className="flex flex-col h-full">
           <Reveal>
-            <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-8 block">
+            <span className="text-sm font-bold tracking-widest text-[#c1b588] uppercase mb-8 block">
               {"// About Us //"}
             </span>
           </Reveal>
 
-          <SlideInRight className="relative w-full flex-grow min-h-[400px] rounded-xl overflow-hidden shadow-2xl group border border-gray-100 hover:shadow-[0_20px_50px_-12px_rgba(184,134,11,0.3)] transition-all duration-500">
+          <SlideInRight className="relative w-full flex-grow min-h-[400px] rounded-xl overflow-hidden shadow-2xl group border border-gray-100 hover:shadow-[0_20px_50px_-12px_rgba(193,181,136,0.3)] transition-all duration-500">
             <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src="/service1.png"
@@ -51,8 +51,8 @@ export default function About() {
             ].map((feature, i) => (
               <Reveal key={i} delay={0.4 + (i * 0.1)}>
                 <div className="flex items-start gap-3 group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#B8860B] mt-2.5 group-hover:scale-150 transition-transform duration-300" />
-                  <span className="text-lg font-medium text-gray-800 group-hover:text-[#B8860B] transition-colors">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#c1b588] mt-2.5 group-hover:scale-150 transition-transform duration-300" />
+                  <span className="text-lg font-medium text-gray-800 group-hover:text-[#c1b588] transition-colors">
                     {feature}
                   </span>
                 </div>

@@ -39,15 +39,15 @@ export default function Team() {
               className="rounded-xl p-8 pt-6 flex flex-col min-h-[360px] relative group
            transition-all duration-500 border border-gray-100 shadow-sm
            bg-white text-brand-black
-           hover:shadow-[0_30px_60px_-15px_rgba(184,134,11,0.25)]
+           hover:shadow-[0_30px_60px_-15px_rgba(93,91,71,0.25)]
            hover:-translate-y-3 cursor-pointer overflow-hidden"
             >
               {/* Background Glow */}
-              <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all duration-500" />
+              <div className="absolute -right-20 -top-20 w-40 h-40 bg-brand-primary/5 rounded-full blur-3xl group-hover:bg-[#c1b588]/20 transition-all duration-500" />
 
               {/* Top Row: Icon container */}
               <div className="mb-6 relative z-10">
-                <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
+                <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-gradient-to-r group-hover:from-[#5d5b47] group-hover:to-[#c1b588] group-hover:text-white transition-all duration-500">
                   <div className="w-1.5 h-1.5 rounded-full bg-current" />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Team() {
                 <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-primary mb-3 block opacity-70 text-center">
                   {member.role}
                 </span>
-                <h3 className="text-xl font-extrabold mb-4 group-hover:text-brand-primary transition-colors text-center">
+                <h3 className="text-xl font-extrabold mb-4 group-hover:text-[#5d5b47] transition-colors text-center">
                   {member.name}
                 </h3>
                 <p className="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors text-justify">
@@ -66,7 +66,7 @@ export default function Team() {
               </div>
 
               {/* Decorative Progress Line */}
-              <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-brand-primary group-hover:w-full transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-gradient-to-r from-[#5d5b47] to-[#c1b588] group-hover:w-full transition-all duration-700" />
             </div>
           ))}
         </div>

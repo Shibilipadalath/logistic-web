@@ -30,7 +30,8 @@ export default function Footer() {
             </div>
 
             <p className="text-brand-grey leading-relaxed mb-8 max-w-sm">
-              Our mission is to build long-term partnerships by delivering consistent quality and dependable service to our global clients.
+              Our mission is to build long-term partnerships by delivering
+              consistent quality and dependable service to our global clients.
             </p>
 
             {/* Social Icons */}
@@ -56,7 +57,7 @@ export default function Footer() {
                 <a
                   key={idx}
                   href="#"
-                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-secondary transition-colors text-white"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588] transition-colors text-white"
                 >
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path d={social.path} />
@@ -96,7 +97,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-brand-grey hover:text-brand-secondary transition-colors"
+                    className="text-brand-grey hover:text-white hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588] px-2 py-1 rounded transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -141,7 +142,7 @@ export default function Footer() {
                 placeholder="Enter your email"
                 className="w-full bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-brand-secondary transition-colors text-white placeholder:text-gray-500"
               />
-              <button className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-[#B8860B] to-[#8B5E00] hover:bg-[#B8860B] px-6 rounded-full text-sm font-bold transition-colors">
+              <button className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-[#5d5b47] to-[#c1b588] hover:opacity-90 px-6 rounded-full text-sm font-bold transition-all">
                 Subscribe
               </button>
             </div>

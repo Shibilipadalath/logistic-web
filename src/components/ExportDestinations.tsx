@@ -22,7 +22,7 @@ export default function ExportDestinations() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-bold tracking-widest text-[#B8860B] uppercase mb-3 block">
+          <span className="text-sm font-bold tracking-widest text-[#c1b588] uppercase mb-3 block">
             {"// Our Markets //"}
           </span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tighter mb-8 leading-[1.1]">
@@ -51,7 +51,7 @@ export default function ExportDestinations() {
             "Global Shipping",
           ].map((tag) => (
             <div key={tag} className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-[#B8860B] rounded-full" />
+              <div className="w-2 h-2 bg-[#c1b588] rounded-full" />
               <span className="text-lg font-bold uppercase tracking-wider text-gray-500">
                 {tag}
               </span>

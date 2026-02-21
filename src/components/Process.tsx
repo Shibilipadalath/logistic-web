@@ -75,7 +75,7 @@ export default function Process() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <span className="text-[#B8860B] font-bold tracking-widest uppercase text-sm mb-3 block">
+            <span className="text-[#c1b588] font-bold tracking-widest uppercase text-sm mb-3 block">
               {"// How It Works //"}
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter">
@@ -100,7 +100,7 @@ export default function Process() {
           {steps.map((step, index) => (
             <div key={index} className="relative z-10 group">
               {/* Icon Container */}
-              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#8B5E00]  transition-all duration-300 shadow-xl">
+              <div className="w-20 h-20 rounded-full border border-gray-700 bg-gray-900 flex items-center justify-center mb-8 hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588] transition-all duration-300 shadow-xl">
                 <div className="text-gray-300 group-hover:text-white transition-colors">
                   {step.icon}
                 </div>
@@ -111,10 +111,10 @@ export default function Process() {
                 className="
     absolute
     text-3xl sm:text-4xl lg:text-5xl
-    font-bold text-[#B8860B]
+    font-bold text-[#c1b588]
     top-4 left-20 sm:left-24 md:left-28
     opacity-75 select-none
-    group-hover:text-[#8B5E00]
+    group-hover:text-[#5d5b47]
     transition-colors
   "
               >

@@ -55,11 +55,11 @@ export default function Hero() {
               <div className="flex items-center gap-4 px-4 pt-2">
                 <Link
                   href="/services"
-                  className="bg-gradient-to-r from-[#B8860B] to-[#8B5E00] 
+                  className="bg-gradient-to-r from-[#5d5b47] to-[#c1b588] 
     text-white px-7 py-3 rounded-full text-base font-bold transition-all 
-    shadow-[0_10px_30px_-10px_rgba(184,134,11,0.5)] 
-    hover:from-[#B8860B]  hover:to-[#B8860B]
-    hover:shadow-[0_20px_40px_-10px_rgba(218,165,32,0.6)] 
+    shadow-[0_10px_30px_-10px_rgba(93,91,71,0.5)] 
+    hover:opacity-90
+    hover:shadow-[0_20px_40px_-10px_rgba(93,91,71,0.6)] 
     hover:-translate-y-1 cursor-pointer flex items-center justify-center text-center"
                 >
                   Our Products
@@ -67,8 +67,8 @@ export default function Hero() {
 
                 <Link
                   href="/contact"
-                  className="bg-white border-2 border-[#B8860B] text-[#B8860B] 
-    hover:bg-[#B8860B] hover:text-white 
+                  className="bg-white border-2 border-[#c1b588] text-[#c1b588] 
+    hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588] hover:text-white 
     px-7 py-3 rounded-full text-base font-bold 
     transition-all hover:-translate-y-1 cursor-pointer flex items-center justify-center text-center"
                 >
