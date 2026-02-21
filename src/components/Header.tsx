@@ -14,7 +14,7 @@ export default function Header() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Products", href: "/services" },
+    { name: "Services", href: "/services" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
@@ -41,11 +41,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
-                  isActive
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
                     ? "bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white shadow-md"
                     : "text-brand-grey hover:text-white hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588]"
-                }`}
+                  }`}
               >
                 {item.name}
               </Link>
@@ -75,11 +74,10 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${
-                  isActive
+                className={`px-5 py-3 rounded-xl text-center font-bold text-lg transition-all duration-200 ${isActive
                     ? "bg-gradient-to-r from-[#5d5b47] to-[#c1b588] text-white"
                     : "text-brand-grey hover:text-white hover:bg-gradient-to-r hover:from-[#5d5b47] hover:to-[#c1b588]"
-                }`}
+                  }`}
               >
                 {item.name}
               </Link>

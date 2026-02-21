@@ -3,7 +3,11 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const images = [
-  { src: "/service4.png", alt: "Logistics Fleet", title: "Cold Chain Transport" },
+  {
+    src: "/service4.png",
+    alt: "Logistics Fleet",
+    title: "Cold Chain Transport",
+  },
   {
     src: "/service2.png",
     alt: "Warehouse Operations",
@@ -26,7 +30,9 @@ export default function Gallery() {
         <div className="mb-24 text-center max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-black leading-[1.2] tracking-tighter mb-10">
             A Glimpse Into <br />
-            <span className="font-serif italic text-brand-primary lowercase normal-case">Our Operations</span>
+            <span className="font-serif italic text-brand-primary lowercase normal-case">
+              Our Gallery
+            </span>
           </h2>
           <div className="flex items-center justify-center gap-4 mb-10 text-brand-primary/40">
             <span className="h-px w-12 bg-current"></span>
@@ -35,7 +41,11 @@ export default function Gallery() {
           </div>
           <p className="text-gray-600 text-xl md:text-3xl leading-[1.6] font-medium font-sans max-w-4xl mx-auto">
             From farm to global markets, see how we ensure
-            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20"> premium quality </span> in every shipment.
+            <span className="text-brand-black font-extrabold border-b-2 border-brand-primary/20">
+              {" "}
+              premium quality{" "}
+            </span>{" "}
+            in every shipment.
           </p>
         </div>
 
